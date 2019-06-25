@@ -144,6 +144,7 @@ header nav ul li a {
 @media only screen and (min-width: 1020px) {
   header {
     background: none;
+    width: calc(100vw - 1em);
   }
   header .logo {
     color: white;
@@ -152,7 +153,7 @@ header nav ul li a {
     color: ghostwhite;
   }
   .fullscreen .featured-section {
-    padding-top: 3rem;
+    padding: 3rem 0 8rem 0;
   }
   .wrapper {
     -ms-grid-columns: 72.5% auto;
@@ -191,12 +192,12 @@ header nav ul li a {
 }
 
 .fullscreen .featured-section {
-  padding-top: 6rem;
+  padding: 6rem 0 2rem 0;
   background-color: black;
   color: white;
   text-align: center;
   font-size: 2em;
-  height: 50vh;
+  height: calc(75% + 3rem);
   width: calc(100% - .05em);
   border-bottom: 1px solid #ED0982;
 }
@@ -222,6 +223,7 @@ header nav ul li a {
   -webkit-transition: .3sec;
   transition: .3sec;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .fullscreen .Projects .project-wrapper .tags {
