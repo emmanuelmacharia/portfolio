@@ -1,17 +1,23 @@
 import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
+
 import './styles/index.css';
 
 
+
 //COMPONENTS
-import Header from './components/Header'
-import Landing from './components/Landing'
+
+import Header from './components/Header';
+import BaseRoutes from './Routes';
 
 
 function App() {
   return (
     <div>
-      <Header />
-      <Landing/>
+      <Router>
+        <Header />
+        <BaseRoutes />
+      </Router>
     </div>
   );
 }
