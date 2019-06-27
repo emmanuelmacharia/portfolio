@@ -135,80 +135,6 @@ header nav ul li a {
   font-family: inherit;
 }
 
-@media only screen and (min-width: 768px) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (min-width: 1020px) {
-  html {
-    font-size: 1.3rem;
-  }
-  header {
-    background: none;
-    width: calc(100vw - 1em);
-  }
-  header .logo {
-    color: white;
-  }
-  header nav ul li a {
-    color: ghostwhite;
-  }
-  .fullscreen .featured-section {
-    padding: 3rem 0 8rem 0;
-  }
-  .wrapper {
-    -ms-grid-columns: 72.5% auto;
-        grid-template-columns: 72.5% auto;
-    -ms-grid-rows: 60% auto;
-        grid-template-rows: 60% auto;
-        grid-template-areas: "hero featured"  "hero explore";
-    height: 100vh;
-  }
-  section.hero {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    grid-area: hero;
-  }
-  section {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .personal-statement {
-    text-align: justify;
-    width: 80%;
-  }
-  .about {
-    -ms-grid-columns: 85% auto;
-        grid-template-columns: 85% auto;
-        grid-template-areas: "experience technical-skills" "education technical-skills";
-    height: 100%;
-  }
-  .about .experience {
-    margin-right: 1rem;
-  }
-  aside.technical-skills {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    grid-area: technical-skills;
-    width: 20rem;
-  }
-}
-
-@media only screen and (min-width: 1800px) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
 .fullscreen {
   width: calc(100vw);
   background-image: linear-gradient(-45deg, #0C0D16, #1A1C2B);
@@ -349,5 +275,115 @@ header nav ul li a {
 .technical-skills ul li:hover {
   background-color: yellow;
   color: #ED0982;
+}
+
+.location-info {
+  height: 100vh;
+  width: calc(100% - 1rem);
+  padding-top: 2rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.contact-div {
+  display: inline-block;
+  padding: 1rem;
+  color: ghostwhite;
+  margin-top: 4em;
+  font-size: 1.1rem;
+}
+
+.contact-div a:hover {
+  text-decoration: none;
+}
+
+.contact-div .myform {
+  margin-top: 1.5rem;
+}
+
+.contact-div .myform div {
+  padding: 0.2rem;
+  margin: 1rem 1rem -0.5rem .1rem;
+  border: none;
+  float: left;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  html {
+    font-size: 1.3rem;
+  }
+  header {
+    background: none;
+    width: calc(100vw - 1em);
+  }
+  header .logo {
+    color: white;
+  }
+  header nav ul li a {
+    color: ghostwhite;
+  }
+  .fullscreen .featured-section {
+    padding: 3rem 0 5srem 0;
+  }
+  .wrapper {
+    -ms-grid-columns: 72.5% auto;
+        grid-template-columns: 72.5% auto;
+    -ms-grid-rows: 60% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas: "hero featured"  "hero explore";
+    height: 100vh;
+  }
+  section.hero {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: hero;
+  }
+  section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .personal-statement {
+    text-align: justify;
+  }
+  .about {
+    -ms-grid-columns: 070% auto;
+        grid-template-columns: 070% auto;
+        grid-template-areas: "experience technical-skills" "education technical-skills";
+    height: 100%;
+  }
+  .about .experience {
+    margin-right: 1rem;
+    border-right: 0.02px solid;
+    padding: 1rem;
+  }
+  aside.technical-skills {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: technical-skills;
+  }
+  .contacts {
+    width: 20%;
+    height: 18rem;
+    margin: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 1.4rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */

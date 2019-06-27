@@ -43,6 +43,7 @@ export default function About() {
                         <li>Object Oriented Programming</li>
                         <li>Functional Programming</li>
                         <li>API (REST)</li>
+                        <li>Webpack</li>
                         <li>Search Engine Optimization</li>
                         <li>Data Structures</li>
                         <li>Algorithms</li>
