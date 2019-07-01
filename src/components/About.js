@@ -154,6 +154,9 @@ export default function About() {
                     <p>Fundamentals of Digital Marketing</p>
                 </section>
             </article>
+            <section>
+                <a href = "/contact">Get in touch</a>
+            </section>
         </div>
     )
 }

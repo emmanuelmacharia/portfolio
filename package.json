@@ -22,8 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "localtunnel": "lt --port 3000",
+    "localtunnel": "lt --port 3001",
     "share": "npm run localtunnel",
+    "ngrok-share": ".../ngrok-stable-windows-amd64 ./ngrok http 5000",
     "deploy": "surge ./src"
   },
   "eslintConfig": {

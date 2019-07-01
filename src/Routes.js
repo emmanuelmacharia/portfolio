@@ -13,7 +13,7 @@ export default function BaseRoutes() {
     return (
         <div>
             <Route exact path = '/' component = {Landing}/>
-            <Route exact path = "/home" component = {Home}/>
+            <Route exact path = "/portfolio" component = {Home}/>
             <Route exact path = '/about' component = {About} />
             <Route exact path = "/contact" component = {Contact} />
         </div>

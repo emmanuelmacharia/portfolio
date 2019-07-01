@@ -13,7 +13,12 @@ body {
     height: 100%;
     font-family: 'Trebuchet MS', 'Montserrat', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     // display: none; 
+
+    a:hover{
+    text-decoration: none;
+    }
 }
+
 
 header{
     position: absolute;
@@ -150,7 +155,7 @@ header{
         background-color:black;
         color: white;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.3em;
         height: calc(75% + 3rem);
         width: calc(100% - .05em);
         border-bottom: 1px solid #ED0982;
@@ -274,27 +279,25 @@ header{
 }
 
 
-//ABOUT PAGE:
+//CONTACT PAGE:
 
 .location-info {
-    height: 100vh;
-    width: calc(100% - 1rem);
-    padding-top: 2rem;
-    padding: 2rem;
-    font-size: 1.2rem;
+    height: calc(110vh);
+    width: calc(100% + 1rem);
+    padding: 2rem 0 1rem 0;
 
 }
 .contact-div{
     display: inline-block;
-    padding: 1rem;
+    padding: .5rem;
     color: ghostwhite;
-    margin-top: 4em;
-    font-size: 1.1rem;
+    margin: 3em 0 0 .3rem;
+    font-size: .8rem;
     a:hover{
         text-decoration: none;
     }
     .myform{
-        margin-top: 1.5rem;
+        margin: .5rem 0;
         div{
             padding: 0.2rem;
             margin: 1rem 1rem -0.5rem .1rem;
@@ -309,10 +312,25 @@ header{
 
 
 //RESPONSIVENESS
+@media only screen and (min-width: 480px){
+    .location-info{
+        height: 100vh;
+    }
+}
 
 @media only screen and (min-width: 768px){
     html {
         font-size: 1.2rem;
+    }
+
+    .location-info{
+        grid-template-columns: 50% auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "personal-statement contact-div";
+    }
+    section.contact-div {
+        grid-area: contact-div;
     }
 }
 
@@ -379,6 +397,9 @@ header{
         // width: 20rem;
     }
 
+    .location-info{
+        height: 100vh;
+    }
     .contacts{
         width: 20%;
         height: 18rem;
