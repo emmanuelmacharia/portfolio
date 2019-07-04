@@ -29,7 +29,7 @@ export default class Projects extends Component {
                     marginTop: "-1rem"
                 }
             );
-            this.styleChildren();
+            // this.styleChildren();
         } else {
             this.setState(
                 this.state.contentStyle = {display: "none"}
@@ -37,28 +37,28 @@ export default class Projects extends Component {
         }
     }
 
-    styleChildren = () => {
-        var description = document.getElementsByClassName("description")[0];
-        var linkdiv = document.getElementsByClassName("link-project")[0]
-        var links = document.getElementsByClassName("link")
-        description.body.style = {
-            padding: "1rem",
-            textAlign: 'justify',
-            margin: "0 0 0 0.5rem",
-            width: "80%",
-            lineHeight: 1.15
-        }
-        linkdiv.body.style = {
-            display: "flex",
-            justifyContent: "space-around"
-        }
+    // styleChildren = () => {
+    //     var description = document.getElementsByClassName("description")[0];
+    //     var linkdiv = document.getElementsByClassName("link-project")[0]
+    //     var links = document.getElementsByClassName("link")
+    //     description.body.style = {
+    //         padding: "1rem",
+    //         textAlign: 'justify',
+    //         margin: "0 0 0 0.5rem",
+    //         width: "80%",
+    //         lineHeight: 1.15
+    //     }
+    //     linkdiv.body.style = {
+    //         display: "flex",
+    //         justifyContent: "space-around"
+    //     }
 
-        links.body.style = {
-            border: "0.5px solid #ED0982",
-            borderRadius: "1rem",
-            margin: "0.3rem"
-        }
-    }
+    //     links.body.style = {
+    //         border: "0.5px solid #ED0982",
+    //         borderRadius: "1rem",
+    //         margin: "0.3rem"
+    //     }
+    // }
 
     render() {
         return (

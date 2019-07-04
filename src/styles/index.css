@@ -6,7 +6,7 @@
 
 body {
   height: 100%;
-  font-family: 'Trebuchet MS', 'Montserrat', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Maiandra GD";
 }
 
 body a:hover {
@@ -378,8 +378,8 @@ header nav ul li a {
     text-align: justify;
   }
   .about {
-    -ms-grid-columns: 070% auto;
-        grid-template-columns: 070% auto;
+    -ms-grid-columns: 70% auto;
+        grid-template-columns: 70% auto;
         grid-template-areas: "experience technical-skills" "education technical-skills";
     height: 100%;
   }

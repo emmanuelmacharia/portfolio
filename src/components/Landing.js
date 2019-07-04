@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TweenMax, { TimelineMax, Power2 } from "gsap/TweenMax";
+import { TimelineMax, Power2 } from "gsap/TweenMax";
 
 export default class Landing extends Component {
 

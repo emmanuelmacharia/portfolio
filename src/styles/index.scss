@@ -11,7 +11,8 @@ $featured-color: yellow;
 
 body {
     height: 100%;
-    font-family: 'Trebuchet MS', 'Montserrat', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Maiandra GD";
+    // font-family: 'Trebuchet MS', 'Montserrat', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     // display: none; 
 
     a:hover{
@@ -380,7 +381,7 @@ header{
 
     }
     .about{
-        grid-template-columns: 070% auto;
+        grid-template-columns: 70% auto;
         grid-template-areas:
             "experience technical-skills"
             "education technical-skills";
