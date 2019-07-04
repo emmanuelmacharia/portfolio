@@ -15,10 +15,8 @@ export default class Projects extends Component {
     }
 
     handleClick = event => {
-        console.log(this.state.trigger)
-        this.setState(prevState => {
+       this.setState(prevState => {
             this.state.trigger = !this.state.trigger
-            console.log(this.state.trigger)
         })
         if (this.state.trigger === true) {
             this.setState( 
@@ -26,10 +24,10 @@ export default class Projects extends Component {
                     display: "block", 
                     color: "white", 
                     fontSize: "inherit",
-                    marginTop: "-1rem"
-                }
+                    margin: "1.5rem"
+                } 
             );
-            // this.styleChildren();
+            this.styleChildren()
         } else {
             this.setState(
                 this.state.contentStyle = {display: "none"}
@@ -37,28 +35,36 @@ export default class Projects extends Component {
         }
     }
 
-    // styleChildren = () => {
-    //     var description = document.getElementsByClassName("description")[0];
-    //     var linkdiv = document.getElementsByClassName("link-project")[0]
-    //     var links = document.getElementsByClassName("link")
-    //     description.body.style = {
-    //         padding: "1rem",
-    //         textAlign: 'justify',
-    //         margin: "0 0 0 0.5rem",
-    //         width: "80%",
-    //         lineHeight: 1.15
-    //     }
-    //     linkdiv.body.style = {
-    //         display: "flex",
-    //         justifyContent: "space-around"
-    //     }
+    styleChildren = () => {
+        var wrapper = document.getElementsByClassName("all")
+        var description = document.getElementsByClassName("description")
+        var linkDiv  = document.getElementsByClassName("link-project")
+        var links = document.getElementsByClassName("link")
+        var imageDiv = document.getElementsByClassName("img")
+        var image = document.getElementsByClassName("p-image")
+        Array.from(wrapper).map(wrapper => {
+            wrapper.setAttribute("class", "project-content-wrapper")
+        })
+        Array.from(linkDiv).map(singleDiv => {
+            singleDiv.setAttribute("class", "link-container")
+        })
+        Array.from(links).map(link => {
+            link.setAttribute("class", "project-link")
+        })
 
-    //     links.body.style = {
-    //         border: "0.5px solid #ED0982",
-    //         borderRadius: "1rem",
-    //         margin: "0.3rem"
-    //     }
-    // }
+        Array.from(description).map(p => {
+            p.setAttribute("class", "paragraph")
+        })
+
+        Array.from(imageDiv).map(img => {
+            img.setAttribute("class", "content-image")
+        })
+
+        Array.from(image).map(img => {
+            img.setAttribute("class", "project-image")
+        })
+
+    }
 
     render() {
         return (
@@ -81,16 +87,21 @@ export default class Projects extends Component {
                     </div>
                 </button>
                 <div className="project-content" style = {this.state.contentStyle}>
-                    {/* <p> { projectView.description } </p> */}
-                    <div className = "description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione, nemo sunt doloribus possimus doloremque non ex, tempora saepe dolorem ipsa, ad quo atque beatae. Iure, ab! Obcaecati, dicta eum?</p>
-                    </div>
-                    <div className="link-project">
-                        <div className="link">
-                            <a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view source code</a>  
+                    <div className = "all">
+                        {/* <p> { projectView.description } </p> */}
+                        <div className = "description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione, nemo sunt doloribus possimus doloremque non ex, tempora saepe dolorem ipsa, ad quo atque beatae. Iure, ab! Obcaecati, dicta eum?</p>
                         </div>
-                        <div className = "link">
-                            <a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view live website</a>
+                        <div className = "img">
+                            <img src="https://cdn.pixabay.com/photo/2017/08/20/14/37/eat-2661935_960_720.jpg" class="thumbnail-image p-image" alt="project-screenshot" />
+                        </div>
+                        <div className="link-project">
+                            <div className="link">
+                                <a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view source code</a>  
+                            </div>
+                            <div className = "link">
+                                <a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view live website</a>
+                            </div>
                         </div>
                     </div>
                 </div>

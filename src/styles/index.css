@@ -210,9 +210,12 @@ header nav ul li a {
 }
 
 .fullscreen .Projects .project-content .link-projects {
-  display: inline-block;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .fullscreen .Projects .project-content .link-projects .link {
@@ -220,6 +223,49 @@ header nav ul li a {
   background-color: none;
   color: #ED0982;
   text-decoration: none;
+}
+
+.project-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.paragraph {
+  color: rgba(245, 245, 245, 0.637);
+  width: 100%;
+}
+
+.content-image {
+  display: block;
+  margin: 1rem 1rem;
+  padding: 1rem;
+}
+
+.content-image .project-image {
+  height: 180px;
+  width: 320px;
+}
+
+.link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1.5rem 0 0 -.5rem;
+  padding: 0.3rem;
+}
+
+.link-container .project-link {
+  color: rgba(245, 245, 245, 0.637);
+  padding: 0.5rem;
+  border-radius: .2rem;
+}
+
+.link-container .project-link a:hover {
+  color: #ED0982;
 }
 
 .about {
@@ -231,7 +277,7 @@ header nav ul li a {
 
 .about, .technical-skills, .personal-statement {
   margin-left: 3%;
-  color: whitesmoke;
+  color: rgba(245, 245, 245, 0.637);
   padding: 1rem 0 0 0;
   font-size: 0.8em;
   text-align: left;
@@ -290,7 +336,7 @@ header nav ul li a {
 .contact-div {
   display: inline-block;
   padding: .5rem;
-  color: ghostwhite;
+  color: rgba(245, 245, 245, 0.637);
   margin: 3em 0 0 .3rem;
   font-size: .8rem;
 }
@@ -331,6 +377,13 @@ header nav ul li a {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: contact-div;
+  }
+  .content-image {
+    margin-left: 12.5rem;
+  }
+  .content-image .project-image {
+    height: 360px;
+    width: 640px;
   }
 }
 

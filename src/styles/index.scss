@@ -208,8 +208,8 @@ header{
 
         .project-content{
             .link-projects{
-                display: inline-block;
-                justify-content: space-around;
+                display: flex;
+                justify-content: space-between;
                 .link{
                     margin: 0.5px solid #ED0982;
                     background-color: none;
@@ -222,7 +222,43 @@ header{
 
 }
 
+.project-content-wrapper{
+    display: grid;
+    align-content: center;
+}
 
+.paragraph{
+    color: rgba(245, 245, 245, 0.637);
+    width: 100%;
+}
+.content-image{
+    display: block;
+    margin: 1rem 1rem;
+    padding: 1rem;
+
+
+    .project-image{
+        height: 180px;
+        width: 320px;
+
+    }
+}
+.link-container{
+    display: flex;
+    justify-content: space-around; 
+    margin:1.5rem 0 0 -.5rem; 
+    padding:0.3rem;
+
+    .project-link{
+        color: rgba(245, 245, 245, 0.637); 
+        padding: 0.5rem; 
+        border-radius: .2rem;
+    }
+
+    .project-link a:hover{
+        color: #ED0982
+    }
+}
 
 //ABOUT PAGE:
 .about {
@@ -232,7 +268,7 @@ header{
 }
 .about, .technical-skills, .personal-statement{
     margin-left: 3%;
-    color: whitesmoke;
+    color:rgba(245, 245, 245, 0.637);
     padding: 1rem 0 0 0;
     font-size: 0.8em;
     text-align: left;
@@ -291,7 +327,7 @@ header{
 .contact-div{
     display: inline-block;
     padding: .5rem;
-    color: ghostwhite;
+    color: rgba(245, 245, 245, 0.637);
     margin: 3em 0 0 .3rem;
     font-size: .8rem;
     a:hover{
@@ -333,6 +369,33 @@ header{
     section.contact-div {
         grid-area: contact-div;
     }
+
+    // .project-content-wrapper{
+    //     grid-template-columns: 60% auto;
+    //     grid-template-rows: 75% auto;
+    //     grid-template-areas: 
+    //         "paragraph content-image"
+    //         "link-container";
+
+    // }
+    // .paragraph{
+    //     grid-area: paragraph;
+    // }
+
+    .content-image{
+        // grid-area: content-image;
+        margin-left: 12.5rem;
+
+        .project-image{
+            height: 360px;
+            width: 640px;
+        }
+    }
+
+    // .link-container{
+    //     grid-area: link-container;
+    // }
+
 }
 
 @media only screen and (min-width: 1020px){
@@ -348,7 +411,7 @@ header{
         }
 
         nav ul li a{
-            color: ghostwhite;
+            color:ghostwhite;
         }
     }
     .fullscreen{
