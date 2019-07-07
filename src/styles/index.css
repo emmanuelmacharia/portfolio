@@ -153,7 +153,7 @@ header nav ul li a {
   font-size: 1.3em;
   height: calc(75% + 3rem);
   width: calc(100% - .05em);
-  border-bottom: 1px solid #ED0982;
+  border-bottom: 1px groove #ED0982;
 }
 
 .fullscreen .Projects {
@@ -185,9 +185,8 @@ header nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: grey;
 }
 
@@ -195,7 +194,7 @@ header nav ul li a {
   left: 0;
   padding: 0;
   margin-right: 0.5rem;
-  border-right: 1px solid #ED0982;
+  border-right: 1px groove #ED0982;
 }
 
 .fullscreen .Projects .project-wrapper .thumbnail .thumbnail-image {
@@ -317,7 +316,7 @@ header nav ul li a {
 .technical-skills ul li {
   display: inline-block;
   padding: 0.5em;
-  border: 1px solid #ED0982;
+  border: 1px hidden #ED0982;
   margin: 0.2em;
   border-radius: 2rem;
 }
@@ -378,12 +377,30 @@ header nav ul li a {
     -ms-grid-column: 2;
     grid-area: contact-div;
   }
+  .project-content-wrapper {
+    -ms-grid-columns: 30% 30% auto;
+        grid-template-columns: 30% 30% auto;
+        grid-template-areas: "paragraph content-image link-container";
+  }
+  .paragraph {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: paragraph;
+  }
   .content-image {
-    margin-left: 12.5rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: content-image;
   }
   .content-image .project-image {
-    height: 360px;
-    width: 640px;
+    height: 180px;
+    width: 320px;
+  }
+  .link-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: link-container;
+    margin: 4rem 0 0 2rem;
   }
 }
 
@@ -438,7 +455,7 @@ header nav ul li a {
   }
   .about .experience {
     margin-right: 1rem;
-    border-right: 0.02px solid;
+    border-right: 0.02px dotted;
     padding: 1rem;
   }
   aside.technical-skills {

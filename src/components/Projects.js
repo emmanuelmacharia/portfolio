@@ -90,7 +90,7 @@ export default class Projects extends Component {
                     <div className = "all">
                         {/* <p> { projectView.description } </p> */}
                         <div className = "description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione, nemo sunt doloribus possimus doloremque non ex, tempora saepe dolorem ipsa, ad quo atque beatae. Iure, ab! Obcaecati, dicta eum?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione, nemo sunt doloribus possimus doloremque non ex, tempora saepe dolorem ipsa, ad quo atque Provident ratione, nemo sunt doloribus possimus doloremque non ex, tempora saepe dolorem ipsa, ad quo at beatae. Iure, ab! Obcaecati, dicta eum?</p>
                         </div>
                         <div className = "img">
                             <img src="https://cdn.pixabay.com/photo/2017/08/20/14/37/eat-2661935_960_720.jpg" class="thumbnail-image p-image" alt="project-screenshot" />
