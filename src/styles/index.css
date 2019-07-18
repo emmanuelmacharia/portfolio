@@ -7,6 +7,7 @@
 body {
   height: 100%;
   font-family: "Maiandra GD";
+  font-size: 16px;
 }
 
 body a:hover {
@@ -70,7 +71,7 @@ header nav ul li a {
 }
 
 .wrapper section h2 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .wrapper section .read-btn {
@@ -106,16 +107,16 @@ header nav ul li a {
 
 .wrapper section.hero p {
   width: 70%;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   margin-bottom: 0;
 }
 
 .wrapper section.hero h1 {
-  font-size: 2.2rem;
+  font-size: 2.2em;
 }
 
 .wrapper section.featured, .wrapper section.explore {
-  font-size: .9rem;
+  font-size: .9em;
   line-height: 1.6em;
 }
 
@@ -146,19 +147,19 @@ header nav ul li a {
 }
 
 .fullscreen .featured-section {
-  padding: 6rem 0 2rem 0;
+  padding: 6em 0 2em 0;
   background-color: black;
   color: white;
   text-align: center;
   font-size: 1.3em;
-  height: calc(75% + 3rem);
+  height: calc(75% + 3em);
   width: calc(100% - .05em);
   border-bottom: 1px groove #ED0982;
 }
 
 .fullscreen .Projects {
   width: 100vw;
-  margin-top: 3rem;
+  margin-top: 3em;
   width: 75%;
   margin-left: 12.5%;
 }
@@ -172,14 +173,14 @@ header nav ul li a {
   width: 100%;
   background-color: #0C0D16;
   border: 0;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .fullscreen .Projects .project-wrapper .thumbnail {
   left: 0;
   padding: 0;
-  margin-right: 0.5rem;
+  margin-right: 0.5em;
   border-right: 1px groove #ED0982;
 }
 
@@ -190,7 +191,7 @@ header nav ul li a {
 }
 
 .fullscreen .Projects .project-wrapper .arrow-head {
-  margin-top: 1.35rem;
+  margin-top: 1.35em;
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
   -webkit-transition-property: -webkit-transform;
@@ -207,7 +208,7 @@ header nav ul li a {
 }
 
 .fullscreen .Projects .project-wrapper .tags {
-  font-size: 0.5rem;
+  font-size: 0.4em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +218,7 @@ header nav ul li a {
 }
 
 .fullscreen .Projects .project-wrapper .tags span {
-  margin: 0 0.5rem;
+  margin: 0 0.5em;
 }
 
 .fullscreen .Projects .project-wrapper .tags span:nth-child(1) {
@@ -249,12 +250,12 @@ header nav ul li a {
 .fullscreen .link-buttons {
   display: -ms-grid;
   display: grid;
-  margin: 1rem 12.5% 0 12.5%;
-  padding: 1rem 0 1rem 0;
+  margin: 1em 12.5% 0 12.5%;
+  padding: 1em 0 1em 0;
 }
 
 .fullscreen .link-buttons div {
-  padding: 1rem;
+  padding: 1em;
   border: 1px dotted;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -281,7 +282,7 @@ header nav ul li a {
       align-content: left;
   -webkit-transition: "all 3s";
   transition: "all 3s";
-  width: 75%;
+  width: 100%;
 }
 
 .project-content-wrapper .paragraph {
@@ -291,7 +292,7 @@ header nav ul li a {
 
 .project-content-wrapper .content-image {
   display: block;
-  padding: .5rem;
+  padding: .5em;
 }
 
 .project-content-wrapper .content-image .project-image {
@@ -305,14 +306,14 @@ header nav ul li a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 1.5rem 0 0 -.5rem;
-  padding: 0.3rem;
+  margin: 1.5em 0 0 -.5em;
+  padding: 0.3em;
 }
 
 .link-container .project-link {
   color: rgba(245, 245, 245, 0.637);
-  padding: 0.5rem;
-  border-radius: .2rem;
+  padding: 0.5em;
+  border-radius: .2em;
 }
 
 .link-container .project-link a:hover {
@@ -324,43 +325,44 @@ header nav ul li a {
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
+  line-height: 1.6em;
 }
 
 .about, .technical-skills, .personal-statement {
   margin-left: 3%;
   color: rgba(245, 245, 245, 0.637);
-  padding: 1rem 0 0 0;
-  font-size: 0.8em;
+  padding: 1em 0 0 0;
+  font-size: 0.9em;
   text-align: left;
 }
 
 .about h2, .about h3, .about h4, .technical-skills h2, .technical-skills h3, .technical-skills h4, .personal-statement h2, .personal-statement h3, .personal-statement h4 {
   font-weight: lighter;
   color: #ED0982;
-  font-size: 1.5rem;
-  padding: 1rem 0;
+  font-size: 1.5em;
+  padding: 1em 0;
   text-align: left;
 }
 
 .about h2, .technical-skills h2, .personal-statement h2 {
-  padding: 0.3rem 0 0;
+  padding: 0.3em 0 0;
 }
 
 .about h3, .technical-skills h3, .personal-statement h3 {
-  font-size: 1.2rem;
-  padding-top: .3rem;
+  font-size: 1.2em;
+  padding-top: .3em;
 }
 
 .about h4, .technical-skills h4, .personal-statement h4 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .personal-statement {
-  padding-top: 5rem;
+  padding-top: 5em;
 }
 
 .technical-skills {
-  margin-top: -1rem;
+  margin-top: -1em;
   padding-left: 0;
   margin-left: 0;
 }
@@ -370,7 +372,7 @@ header nav ul li a {
   padding: 0.5em;
   border: 1px hidden #ED0982;
   margin: 0.2em;
-  border-radius: 2rem;
+  border-radius: 2em;
 }
 
 .technical-skills ul li:hover {
@@ -378,18 +380,26 @@ header nav ul li a {
   color: #ED0982;
 }
 
+.experience ul, .education ul {
+  list-style: square inside none;
+}
+
+.experience ul li, .education ul li {
+  margin: 0.5em 0;
+}
+
 .location-info {
   height: calc(110vh);
-  width: calc(100% + 1rem);
-  padding: 2rem 0 1rem 0;
+  width: calc(100% + 1em);
+  padding: 2em 0 1em 0;
 }
 
 .contact-div {
   display: inline-block;
-  padding: .5rem;
+  padding: .5em;
   color: rgba(245, 245, 245, 0.637);
-  margin: 3em 0 0 .3rem;
-  font-size: .8rem;
+  margin: 3em 0 0 .3em;
+  font-size: .8em;
 }
 
 .contact-div a:hover {
@@ -397,12 +407,12 @@ header nav ul li a {
 }
 
 .contact-div .myform {
-  margin: .5rem 0;
+  margin: .5em 0;
 }
 
 .contact-div .myform div {
-  padding: 0.2rem;
-  margin: 1rem 1rem -0.5rem .1rem;
+  padding: 0.2em;
+  margin: 1em 1em -0.5em .1em;
   border: none;
   float: left;
 }
@@ -415,7 +425,7 @@ header nav ul li a {
 
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
   .location-info {
     -ms-grid-columns: 50% auto;
@@ -433,7 +443,7 @@ header nav ul li a {
 
 @media only screen and (min-width: 1020px) {
   html {
-    font-size: 1.3rem;
+    font-size: 1.3em;
   }
   header {
     background: none;
@@ -446,7 +456,7 @@ header nav ul li a {
     color: ghostwhite;
   }
   .fullscreen .featured-section {
-    padding: 3rem 0 5srem 0;
+    padding: 3em 0 5sem 0;
   }
   .wrapper {
     -ms-grid-columns: 72.5% auto;
@@ -499,7 +509,7 @@ header nav ul li a {
     -ms-grid-column: 2;
     grid-area: link-container;
     display: block;
-    margin: 4rem 0 0 6rem;
+    margin: 4em 0 0 6em;
   }
   .about {
     -ms-grid-columns: 70% auto;
@@ -508,9 +518,9 @@ header nav ul li a {
     height: 100%;
   }
   .about .experience {
-    margin-right: 1rem;
+    margin-right: 1em;
     border-right: 0.02px dotted;
-    padding: 1rem;
+    padding: 1em;
   }
   aside.technical-skills {
     -ms-grid-row: 1;
@@ -523,14 +533,14 @@ header nav ul li a {
   }
   .contacts {
     width: 20%;
-    height: 18rem;
-    margin: 2.5rem;
+    height: 18em;
+    margin: 2.5em;
   }
 }
 
 @media only screen and (min-width: 1800px) {
   html {
-    font-size: 1.4rem;
+    font-size: 1.4em;
   }
 }
 /*# sourceMappingURL=index.css.map */

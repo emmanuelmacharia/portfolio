@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown,  faChevronRight} from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight} from '@fortawesome/free-solid-svg-icons';
 
 
 export default class Projects extends Component {
@@ -92,7 +92,7 @@ export default class Projects extends Component {
 
     render() {
         const relevantTags = this.props.tags.map(tag => <span>{tag}</span>)
-        const links = this.props.deployed ? <div className="link-project"><div className="link"><a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view source code</a></div><div className="link"><a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view live site</a></div></div> : <div className="link"><a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view source code</a></div>
+        const links = this.props.deployed ? <div className="link-project"><div className="link"><a href={this.props.github} target="_blank" rel="noopener noreferrer">view source code</a></div><div className="link"><a href={this.props.website} target="_blank" rel="noopener noreferrer">view live site</a></div></div> : <div className="link"><a href= {this.props.github} target="_blank" rel="noopener noreferrer">view source code</a></div>
         return (
             <div>
                 <button className = "project-wrapper" onClick = {this.handleClick}>
@@ -103,7 +103,6 @@ export default class Projects extends Component {
                         <div className = "project-title">
                             <p>{this.props.name}</p>
                         </div>
-                        {/* <div className= "arrow-anim"></div> */}
                         <div className = "tags">
                             {relevantTags}
                         </div>
@@ -127,10 +126,3 @@ export default class Projects extends Component {
         )
     }
 }
-
-// var linkStyle = {
-//     margin: "0.5px solid #ED0982",
-//     backgroundColor: "none",
-//     color: "#ED0982",
-//     textDecoration: "none"
-// }
