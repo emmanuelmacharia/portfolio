@@ -172,40 +172,64 @@ header{
         .project-wrapper {
             color: white;
             display: flex;
-            justify-content: start;
+            text-align: left;
             width: 100%;
             background-color: #0C0D16;
             border: 0;
-            transition: .3sec;
             margin-top: 1rem;
             margin-bottom: 1rem;
+            
+        .thumbnail {
+            left: 0;
+            padding: 0;
+            margin-right: 0.5rem;
+            border-right: 1px groove $beautiful-pink;
+
+            .thumbnail-image{
+            left: 0;
+            height: 80px;
+            width: 80px;
+            }
+        }
+            .arrow-head{
+                // margin: 2.5% 5% 2.5% 40%; 
+                margin-top: 1.35rem;
+                -webkit-transition-duration: .3s;
+                -moz-transition-duration: .3s;
+                -o-transition-duration: .3s;
+                transition-duration: .3s;
+                -webkit-transition-property: -webkit-transform;
+                -moz-transition-property: -moz-transform;
+                -o-transition-property: -o-transform;
+                transition-property: transform;
+            }
+
+            arrow-head:hover{
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                color: $beautiful-pink;
+            }
 
             .tags{
                 font-size: 0.5rem;
                 display: flex;
                 justify-content: space-around;
                 color: grey;
-            }
-            .thumbnail {
-                left: 0;
-                padding: 0;
-                margin-right: 0.5rem;
-                border-right: 1px groove $beautiful-pink;
 
-                .thumbnail-image{
-                left: 0;
-                height: 80px;
-                width: 80px;
+                span{
+                    margin: 0 0.5rem;
                 }
-
+                span:nth-child(1){
+                    margin-left: 0;
+                }
             }
 
             .text-wrapper {
                 margin-top: 15px;
                 padding-top: 10px;
-
+                width: calc(92% - 89px);
             }
-            
         }
 
         .project-content{
@@ -222,29 +246,53 @@ header{
         }
     }
 
+    .link-buttons{
+        display: grid;
+        margin: 1rem 12.5% 0 12.5%;
+        padding: 1rem 0 1rem 0;
+        
+        div{
+            padding: 1rem;
+            border: 1px dotted;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+        
+        &:hover{
+                background-color: $refreshingly-blue;
+                transition: all 0.3s ease-in-out;
+                a  {
+                    color: white;
+                }
+            }
+        }
+
+
+    }
+
 }
 
 .project-content-wrapper{
     display: grid;
-    align-content: center;
-}
+    align-content: left;
+    transition: "all 3s";
+    width: 75%;
 
-.paragraph{
+    .paragraph{
     color: rgba(245, 245, 245, 0.637);
-    width: 100%;
-}
-.content-image{
+    width: calc(100%);
+    }
+    .content-image{
     display: block;
-    margin: 1rem 1rem;
-    padding: 1rem;
-
+    padding: .5rem;
 
     .project-image{
-        height: 180px;
-        width: 320px;
-
+        height: 56.25%;
+        width: 100%;
+        }
     }
 }
+
 .link-container{
     display: flex;
     justify-content: space-around; 
@@ -368,34 +416,6 @@ header{
     section.contact-div {
         grid-area: contact-div;
     }
-
-
-    .project-content-wrapper{
-        grid-template-columns: 30% 30% auto;
-        grid-template-areas: 
-            "paragraph content-image link-container";
-
-    }
-    .paragraph{
-        grid-area: paragraph;
-    }
-
-    .content-image{
-        grid-area: content-image;
-        // margin-left: 12.5rem;
-
-        .project-image{
-            height: 180px;
-            width: 320px;
-        }
-    }
-
-    .link-container{
-        grid-area: link-container;
-        // display: flex;
-        // flex-direction: column-reverse;
-        margin: 4rem 0 0 2rem;
-    }
 }
 
 @media only screen and (min-width: 1020px){
@@ -443,6 +463,34 @@ header{
         // width: 80%;
 
     }
+
+    .project-content-wrapper{
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "paragraph content-image"
+            "paragraph link-container";
+
+    }
+    .paragraph{
+        grid-area: paragraph;
+    }
+
+    .content-image{
+        grid-area: content-image;
+        // margin-left: 12.5rem;
+
+        .project-image{
+            height: 180px;
+            width: 320px;
+        }
+    }
+
+    .link-container{
+        grid-area: link-container;
+        display: block;
+        margin: 4rem 0 0 6rem;
+    }
+
     .about{
         grid-template-columns: 70% auto;
         grid-template-areas:
