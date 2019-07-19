@@ -19,7 +19,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: calc(100vw - 2em);
+  width: calc(100vw);
   background: white;
 }
 
@@ -95,7 +95,7 @@ header nav ul li a {
 
 .wrapper section.hero {
   padding: 8em 8em 8em 2em;
-  background: url("../images/sd5.png");
+  background: url("../images/programming-3201149_960_720.png");
   background-size: cover;
   color: whitesmoke;
 }
@@ -144,13 +144,20 @@ header nav ul li a {
 @media only screen and (min-width: 1020px) {
   header {
     background: none;
+    width: calc(100vw - 1em);
   }
   header .logo {
     color: white;
   }
+  header nav ul li a {
+    color: ghostwhite;
+  }
+  .fullscreen .featured-section {
+    padding: 3rem 0 8rem 0;
+  }
   .wrapper {
-    -ms-grid-columns: 70% auto;
-        grid-template-columns: 70% auto;
+    -ms-grid-columns: 72.5% auto;
+        grid-template-columns: 72.5% auto;
     -ms-grid-rows: 60% auto;
         grid-template-rows: 60% auto;
         grid-template-areas: "hero featured"  "hero explore";
@@ -177,5 +184,87 @@ header nav ul li a {
   html {
     font-size: 21px;
   }
+}
+
+.fullscreen {
+  background-image: linear-gradient(-45deg, #0C0D16, #1A1C2B);
+  height: 100%;
+}
+
+.fullscreen .featured-section {
+  padding: 6rem 0 2rem 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  height: calc(75% + 3rem);
+  width: calc(100% - .05em);
+  border-bottom: 1px solid #ED0982;
+}
+
+.fullscreen .Projects {
+  width: 100vw;
+  margin-top: 3rem;
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.fullscreen .Projects .project-wrapper {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
+  background-color: #0C0D16;
+  border: 0;
+  -webkit-transition: .3sec;
+  transition: .3sec;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fullscreen .Projects .project-wrapper .tags {
+  font-size: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: grey;
+}
+
+.fullscreen .Projects .project-wrapper .thumbnail {
+  left: 0;
+  padding: 0;
+  margin-right: 0.5rem;
+  border-right: 1px solid #ED0982;
+}
+
+.fullscreen .Projects .project-wrapper .thumbnail .thumbnail-image {
+  left: 0;
+  height: 80px;
+  width: 80px;
+}
+
+.fullscreen .Projects .project-wrapper .text-wrapper {
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.fullscreen .Projects .project-content .link-projects {
+  display: inline-block;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fullscreen .Projects .project-content .link-projects .link {
+  margin: 0.5px solid #ED0982;
+  background-color: none;
+  color: #ED0982;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */

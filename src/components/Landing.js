@@ -32,7 +32,7 @@ export default class Landing extends Component {
                     </div>
                     <div className="anim-panel">
                         <p>Explore high quality, well documented code</p>
-                        <a href="#" className="read-btn primary">Explore portfolio</a>
+                        <a href="/home" className="read-btn primary">Explore portfolio</a>
                     </div>
                 </div>
             </section>
@@ -45,7 +45,7 @@ export default class Landing extends Component {
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt perspiciatis quibusdam dolores consequuntur nemo quis non reprehenderit necessitatibus provident tempore, numquam perferendis eos doloribus possimus ut asperiores obcaecati sint fugit!
                         </p>
-                        <a href="#" className="read-btn">Read more</a>
+                        <a href="/about" className="read-btn">Read more</a>
                     </div>
                 </div>
             </section>
@@ -56,7 +56,9 @@ export default class Landing extends Component {
                     </div>
                     <div className="anim-panel">
                         <p>Review the source code, and live sites for some of the projects he has done</p>
-                        <button className = "cta">Get started</button>
+                        <form action="/home">
+                            <button className = "cta" type="submit">Get started</button>
+                        </form>
                     </div>
                 </div>
             </section>
