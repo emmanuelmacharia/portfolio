@@ -5,6 +5,10 @@ $button-color: #f96816;
 $featured-color: yellow;
 $beautiful-pink: #ED0982;
 $refreshingly-blue: #5AA2FF;
+$white-text: whitesmoke;
+$grey-text: grey;
+$white-background: white;
+$amazing-grey-text: rgba(245, 245, 245, 0.637);
 
 *{
     margin: 0;
@@ -15,8 +19,6 @@ body {
     height: 100%;
     font-family: "Maiandra GD";
     font-size: 16px;
-    // font-family: 'Trebuchet MS', 'Montserrat', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    // display: none; 
 
     a:hover{
     text-decoration: none;
@@ -31,7 +33,7 @@ header{
     display: flex;
     justify-content: space-between;
     width: calc(100vw);
-    background: white;
+    background: $white-background;
 
     a{
         text-decoration: none;
@@ -86,11 +88,11 @@ header{
         .primary{
             padding: 1.5em 1.5em 1.5em calc(3em + 25px);
             background-position: 3em;
-            border: 1px solid grey;
+            border: 1px solid $grey-text;
             display: inline-block;
             margin-top: 3em;
             margin-left: -3em;
-            color: whitesmoke;
+            color: $white-text;
         }
 
         .clipper{
@@ -103,7 +105,7 @@ header{
         padding: 8em 8em 8em 2em;
         background: url('../images/programming-3201149_960_720.png');
         background-size: cover;
-        color: whitesmoke;
+        color: $white-text;
 
         p{
             width: 70%;
@@ -139,7 +141,7 @@ header{
             width: 100%;
             background: $button-color;
             border: none;
-            color: white;
+            color: $white-background;
             padding: 1em;
             font-family: inherit;
         }
@@ -157,7 +159,7 @@ header{
     .featured-section{
         padding: 6em 0 2em 0;
         background-color:black;
-        color: white;
+        color: $white-background;
         text-align: center;
         font-size: 1.3em;
         height: calc(75% + 3em);
@@ -171,7 +173,7 @@ header{
         margin-left: 12.5%;
 
         .project-wrapper {
-            color: white;
+            color: $white-background;
             display: flex;
             text-align: left;
             width: 100%;
@@ -215,7 +217,7 @@ header{
             .tags{
                 font-size: 0.4em;
                 display: flex;
-                color: grey;
+                color: $grey-text;
 
                 span{
                     margin: 0 0.5em;
@@ -262,7 +264,7 @@ header{
                 background-color: $refreshingly-blue;
                 transition: all 0.3s ease-in-out;
                 a  {
-                    color: white;
+                    color: $white-background;
                 }
             }
         }
@@ -323,7 +325,7 @@ header{
 
     margin-left: 3%;
     margin-right: 2%;
-    color:rgba(245, 245, 245, 0.637);
+    color:$amazing-grey-text;
     padding: 1em 0 0 0;
     font-size: 0.9em;
     text-align: left;
@@ -366,7 +368,7 @@ header{
     }
 
     ul li:hover{
-    background-color: yellow;
+    background-color: $featured-color;
     color: $beautiful-pink;
     }
 }
@@ -391,7 +393,7 @@ header{
 .contact-div{
     display: inline-block;
     padding: .5em;
-    color: rgba(245, 245, 245, 0.637);
+    color: $amazing-grey-text;
     margin: 3em 0 0 .3em;
     font-size: .8em;
     a:hover{
@@ -451,7 +453,7 @@ header{
         width: calc(100vw - 1em);
         
         .logo {
-            color: white;
+            color: $white-background;
         }
 
         nav ul li a{
@@ -547,10 +549,3 @@ header{
         font-size: 1.4em;
     }
 }
-
-//TODO: ADD THE ARROW/LEARN HOW TO ANIMATE IT AND HOW TO EASE IN USING -webkit transition; this is !important;
-// -webkit-transition: height 0.3s ease-in;
-//             -moz-transition: height 0.3s ease-in;
-//             -o-transition: height 0.3s ease-in;
-//             -ms-transition: height 0.3s ease-in;
-//             transition: height 0.3s ease-in;

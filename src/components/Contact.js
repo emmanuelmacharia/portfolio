@@ -62,8 +62,8 @@ export default class Contact extends React.Component {
                          <h4>It'd be great to hear from you</h4>
                          <p>
                             Whether you have questions about projects or are looking to hire me as a software developer for a project/contract. Or maybe you have suggestions on improvements to this site, or needed clarification on something; 
-                            Do not hesitate to get in touch through any one of all these mediums. And if you'd like to know me even more, maybe consider following me on twitter or facebook; or reading my blogs on Medium.
-                            Drop an email (through outlook preferrably) and I will get back to you as soon as I can...😎😉
+                            Do not hesitate to get in touch through any one of all these mediums. And if you'd like to know me even more, maybe consider connecting on linkedIn or following me on twitter or facebook; or reading my blogs on Medium.
+                            Be sure to drop an email (through outlook preferrably) and I will get back to you as soon as I can...😎😉
                         </p>
                      </section>
                      <section className="contact-div">
@@ -74,15 +74,15 @@ export default class Contact extends React.Component {
                          </div>
                          <div className="myform">
                              <div className = "primary-email"><a href="mailto:samuelmarsha@outlook.com"><FontAwesomeIcon icon={faMicrosoft} />&nbsp;Outlook</a></div>
-                             <div className = "secondary-email"><a href="mailto:samuelmarsha@outlook.com"><FontAwesomeIcon icon={faGoogle} />&nbsp;Gmail</a></div>
+                             <div className = "secondary-email"><a href="mailto:samwelehrmarsha@gmail.com"><FontAwesomeIcon icon={faGoogle} />&nbsp;Gmail</a></div>
                              <div className = "phone"><a href="tel:+254707143761"><FontAwesomeIcon icon={faPhone} />&nbsp;work</a></div>
-                             <div className = "phone"><a href="tel:+254707143761"><FontAwesomeIcon icon={faMobile} />&nbsp;cell</a></div>
+                             <div className = "phone"><a href="tel:+254786860761"><FontAwesomeIcon icon={faMobile} />&nbsp;cell</a></div>
                              <div className = "linkedin"><a href="https://linkedin.com/in/emmanuel-macharia" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} />&nbsp;linkedIn</a></div>
                              <div className = "github"><a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} />&nbsp;github</a></div>
-                             <div className = "skype"><a href="tel:+254707143761"><FontAwesomeIcon icon={faSkype} />&nbsp;skype</a></div>
+                             <div className = "skype"><a href="skype:live:samuelmarsha?call"><FontAwesomeIcon icon={faSkype} />&nbsp;skype</a></div>
                              <div className = "slack"><a href = "https://slack.com"><FontAwesomeIcon icon ={faSlack} />&nbsp;slack</a></div>
-                             <div className = "medium"><a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faMediumM} />&nbsp;Medium</a></div>
-                             <div className = "quora"><a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faQuora} />&nbsp;Quora</a></div>
+                             <div className="medium"><a href="https://medium.com/@samwelehrmarsha" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faMediumM} />&nbsp;Medium</a></div>
+                             <div className="quora"><a href="https://www.quora.com/profile/Emmanuel-Macharia-2" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faQuora} />&nbsp;Quora</a></div>
                              <div className = "twitter"><a href="https://twitter.com/Samwelehrmarsha" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} />&nbsp;twitter</a></div>
                              <div className = "facebook"><a href="https://www.facebook.com/samuel.marsha.14" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} />&nbsp;facebook</a></div>
                          </div>
