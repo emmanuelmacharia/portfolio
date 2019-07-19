@@ -212,8 +212,6 @@ header nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   color: grey;
 }
 
@@ -304,8 +302,9 @@ header nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 1.5em 0 0 -.5em;
   padding: 0.3em;
 }
@@ -314,6 +313,7 @@ header nav ul li a {
   color: rgba(245, 245, 245, 0.637);
   padding: 0.5em;
   border-radius: .2em;
+  text-align: center;
 }
 
 .link-container .project-link a:hover {
@@ -330,6 +330,7 @@ header nav ul li a {
 
 .about, .technical-skills, .personal-statement {
   margin-left: 3%;
+  margin-right: 2%;
   color: rgba(245, 245, 245, 0.637);
   padding: 1em 0 0 0;
   font-size: 0.9em;
@@ -358,7 +359,7 @@ header nav ul li a {
 }
 
 .personal-statement {
-  padding-top: 5em;
+  padding-top: 6em;
 }
 
 .technical-skills {
@@ -390,7 +391,7 @@ header nav ul li a {
 
 .location-info {
   height: calc(110vh);
-  width: calc(100% + 1em);
+  width: calc(100% - 1em);
   padding: 2em 0 1em 0;
 }
 
@@ -438,6 +439,12 @@ header nav ul li a {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: contact-div;
+  }
+  .project-wrapper .tags span {
+    font-size: 12.8px;
+  }
+  .personal-statement {
+    width: calc(85%);
   }
 }
 

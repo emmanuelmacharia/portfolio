@@ -59,11 +59,11 @@ export default class Contact extends React.Component {
         <div className = "fullscreen" >
                  <section className="location-info">
                      <section className="personal-statement">
+                         <h4>It'd be great to hear from you</h4>
                          <p>
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Quasi natus dolores, molestiae ex quam velit modi assumenda voluptatum voluptatibus praesentium saepe,
-                             eum voluptates, nemo optio omnis? Quasi repellendus expedita alias.
-                             Here's how to get in touch with me....
+                            Whether you have questions about projects or are looking to hire me as a software developer for a project/contract. Or maybe you have suggestions on improvements to this site, or needed clarification on something; 
+                            Do not hesitate to get in touch through any one of all these mediums. And if you'd like to know me even more, maybe consider following me on twitter or facebook; or reading my blogs on Medium.
+                            Drop an email (through outlook preferrably) and I will get back to you as soon as I can...😎😉
                         </p>
                      </section>
                      <section className="contact-div">
