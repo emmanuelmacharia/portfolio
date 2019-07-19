@@ -120,7 +120,7 @@ header nav ul li a {
 }
 
 .wrapper section.featured {
-  background-color: yellow;
+  background-color: #5AA2FF;
 }
 
 .wrapper section.featured .read-btn {
@@ -153,7 +153,7 @@ header nav ul li a {
   font-size: 1.3em;
   height: calc(75% + 3rem);
   width: calc(100% - .05em);
-  border-bottom: 1px solid #ED0982;
+  border-bottom: 1px groove #ED0982;
 }
 
 .fullscreen .Projects {
@@ -168,34 +168,19 @@ header nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  text-align: left;
   width: 100%;
   background-color: #0C0D16;
   border: 0;
-  -webkit-transition: .3sec;
-  transition: .3sec;
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.fullscreen .Projects .project-wrapper .tags {
-  font-size: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  color: grey;
 }
 
 .fullscreen .Projects .project-wrapper .thumbnail {
   left: 0;
   padding: 0;
   margin-right: 0.5rem;
-  border-right: 1px solid #ED0982;
+  border-right: 1px groove #ED0982;
 }
 
 .fullscreen .Projects .project-wrapper .thumbnail .thumbnail-image {
@@ -204,15 +189,54 @@ header nav ul li a {
   width: 80px;
 }
 
+.fullscreen .Projects .project-wrapper .arrow-head {
+  margin-top: 1.35rem;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.fullscreen .Projects .project-wrapper arrow-head:hover {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  color: #ED0982;
+}
+
+.fullscreen .Projects .project-wrapper .tags {
+  font-size: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: grey;
+}
+
+.fullscreen .Projects .project-wrapper .tags span {
+  margin: 0 0.5rem;
+}
+
+.fullscreen .Projects .project-wrapper .tags span:nth-child(1) {
+  margin-left: 0;
+}
+
 .fullscreen .Projects .project-wrapper .text-wrapper {
   margin-top: 15px;
   padding-top: 10px;
+  width: calc(92% - 89px);
 }
 
 .fullscreen .Projects .project-content .link-projects {
-  display: inline-block;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .fullscreen .Projects .project-content .link-projects .link {
@@ -220,6 +244,79 @@ header nav ul li a {
   background-color: none;
   color: #ED0982;
   text-decoration: none;
+}
+
+.fullscreen .link-buttons {
+  display: -ms-grid;
+  display: grid;
+  margin: 1rem 12.5% 0 12.5%;
+  padding: 1rem 0 1rem 0;
+}
+
+.fullscreen .link-buttons div {
+  padding: 1rem;
+  border: 1px dotted;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.fullscreen .link-buttons div:hover {
+  background-color: #5AA2FF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.fullscreen .link-buttons div:hover a {
+  color: white;
+}
+
+.project-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  -webkit-transition: "all 3s";
+  transition: "all 3s";
+  width: 75%;
+}
+
+.project-content-wrapper .paragraph {
+  color: rgba(245, 245, 245, 0.637);
+  width: calc(100%);
+}
+
+.project-content-wrapper .content-image {
+  display: block;
+  padding: .5rem;
+}
+
+.project-content-wrapper .content-image .project-image {
+  height: 56.25%;
+  width: 100%;
+}
+
+.link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1.5rem 0 0 -.5rem;
+  padding: 0.3rem;
+}
+
+.link-container .project-link {
+  color: rgba(245, 245, 245, 0.637);
+  padding: 0.5rem;
+  border-radius: .2rem;
+}
+
+.link-container .project-link a:hover {
+  color: #ED0982;
 }
 
 .about {
@@ -231,7 +328,7 @@ header nav ul li a {
 
 .about, .technical-skills, .personal-statement {
   margin-left: 3%;
-  color: whitesmoke;
+  color: rgba(245, 245, 245, 0.637);
   padding: 1rem 0 0 0;
   font-size: 0.8em;
   text-align: left;
@@ -271,7 +368,7 @@ header nav ul li a {
 .technical-skills ul li {
   display: inline-block;
   padding: 0.5em;
-  border: 1px solid #ED0982;
+  border: 1px hidden #ED0982;
   margin: 0.2em;
   border-radius: 2rem;
 }
@@ -290,7 +387,7 @@ header nav ul li a {
 .contact-div {
   display: inline-block;
   padding: .5rem;
-  color: ghostwhite;
+  color: rgba(245, 245, 245, 0.637);
   margin: 3em 0 0 .3rem;
   font-size: .8rem;
 }
@@ -377,6 +474,33 @@ header nav ul li a {
   .personal-statement {
     text-align: justify;
   }
+  .project-content-wrapper {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "paragraph content-image" "paragraph link-container";
+  }
+  .paragraph {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: paragraph;
+  }
+  .content-image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: content-image;
+  }
+  .content-image .project-image {
+    height: 180px;
+    width: 320px;
+  }
+  .link-container {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: link-container;
+    display: block;
+    margin: 4rem 0 0 6rem;
+  }
   .about {
     -ms-grid-columns: 70% auto;
         grid-template-columns: 70% auto;
@@ -385,7 +509,7 @@ header nav ul li a {
   }
   .about .experience {
     margin-right: 1rem;
-    border-right: 0.02px solid;
+    border-right: 0.02px dotted;
     padding: 1rem;
   }
   aside.technical-skills {

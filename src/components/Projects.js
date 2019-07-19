@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
-import projects from './projectsData'
+import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown,  faChevronRight} from '@fortawesome/free-solid-svg-icons';
 
 
 export default class Projects extends Component {
     constructor(props){
         super(props)
         this.state = {
-            projects,
             trigger: true,
             contentStyle : {
                 display: "none",
@@ -15,10 +15,10 @@ export default class Projects extends Component {
     }
 
     handleClick = event => {
-        console.log(this.state.trigger)
+        var arrow = document.getElementsByClassName("arrow-head");
+        var arrowArray = Array.from(arrow)
         this.setState(prevState => {
             this.state.trigger = !this.state.trigger
-            console.log(this.state.trigger)
         })
         if (this.state.trigger === true) {
             this.setState( 
@@ -26,72 +26,101 @@ export default class Projects extends Component {
                     display: "block", 
                     color: "white", 
                     fontSize: "inherit",
-                    marginTop: "-1rem"
-                }
+                    transition: "all 300ms ease 0s"
+                } 
             );
-            // this.styleChildren();
+            this.styleChildren();
+            arrowArray.map(arr => {
+                arr.style.transform = "rotate(270deg)";
+                arr.style.color = "#5AA2FF";
+                arr.focus();
+            })
         } else {
             this.setState(
                 this.state.contentStyle = {display: "none"}
             )
+            arrowArray.map(arr => {
+                arr.style.transform = "rotate(90deg)";
+                arr.style.color = "#white";
+                arr.blur();
+            })
         }
     }
 
-    // styleChildren = () => {
-    //     var description = document.getElementsByClassName("description")[0];
-    //     var linkdiv = document.getElementsByClassName("link-project")[0]
-    //     var links = document.getElementsByClassName("link")
-    //     description.body.style = {
-    //         padding: "1rem",
-    //         textAlign: 'justify',
-    //         margin: "0 0 0 0.5rem",
-    //         width: "80%",
-    //         lineHeight: 1.15
-    //     }
-    //     linkdiv.body.style = {
-    //         display: "flex",
-    //         justifyContent: "space-around"
-    //     }
+    styleChildren = () => {
+        var wrapper = document.getElementsByClassName("all")
+        var description = document.getElementsByClassName("description")
+        var linkDiv  = document.getElementsByClassName("link-project")
+        var links = document.getElementsByClassName("link")
+        var imageDiv = document.getElementsByClassName("img")
+        var image = document.getElementsByClassName("p-image")
 
-    //     links.body.style = {
-    //         border: "0.5px solid #ED0982",
-    //         borderRadius: "1rem",
-    //         margin: "0.3rem"
-    //     }
-    // }
+        Array.from(wrapper).map(wrapper => {
+            wrapper.setAttribute("class", "project-content-wrapper")
+        })
+        Array.from(linkDiv).map(singleDiv => {
+            singleDiv.setAttribute("class", "link-container")
+        })
+        Array.from(links).map(link => {
+            link.setAttribute("class", "project-link")
+        })
+
+        Array.from(description).map(p => {
+            p.setAttribute("class", "paragraph")
+        })
+
+        Array.from(imageDiv).map(img => {
+            img.setAttribute("class", "content-image")
+        })
+
+        Array.from(image).map(img => {
+            img.setAttribute("class", "project-image")
+        })
+
+    }
+
+    animateArrow =  () => {
+        var arrow = document.getElementsByClassName("arrow-head");
+        Array.from(arrow).map(arr => {
+
+            arr.style.transform = "rotate(270deg)";
+            arr.style.color = "#5AA2FF";
+            arr.focus();
+        })
+        
+    }
 
     render() {
+        const relevantTags = this.props.tags.map(tag => <span>{tag}</span>)
+        const links = this.props.deployed ? <div className="link-project"><div className="link"><a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view source code</a></div><div className="link"><a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view live site</a></div></div> : <div className="link"><a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view source code</a></div>
         return (
             <div>
                 <button className = "project-wrapper" onClick = {this.handleClick}>
                     <div className = "thumbnail">
-                        <img src= "https://cdn.pixabay.com/photo/2017/08/20/14/37/eat-2661935_960_720.jpg" class= "thumbnail-image" alt = "project-screenshot" />
+                        <img src= "https://cdn.pixabay.com/photo/2017/08/20/14/37/eat-2661935_960_720.jpg" className= "thumbnail-image" alt = "project-screenshot" />
                     </div>
                     <div className="text-wrapper">
                         <div className = "project-title">
-                            <p>JavaScript Calculator</p>
+                            <p>{this.props.name}</p>
                         </div>
-                        <div className= "arrow-anim"></div>
+                        {/* <div className= "arrow-anim"></div> */}
                         <div className = "tags">
-                            <span>Javascript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>React</span>
+                            {relevantTags}
                         </div>
+                    </div>
+                    <div className="arrow-head">
+                        <i className="chevron-down"><FontAwesomeIcon icon={faChevronRight} /></i>
                     </div>
                 </button>
                 <div className="project-content" style = {this.state.contentStyle}>
-                    {/* <p> { projectView.description } </p> */}
-                    <div className = "description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione, nemo sunt doloribus possimus doloremque non ex, tempora saepe dolorem ipsa, ad quo atque beatae. Iure, ab! Obcaecati, dicta eum?</p>
-                    </div>
-                    <div className="link-project">
-                        <div className="link">
-                            <a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view source code</a>  
+                    <div className = "all">
+                        <div className = "description">
+                            <p>{this.props.description}</p>
                         </div>
-                        <div className = "link">
-                            <a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view live website</a>
+                        <div className = "img">
+                            <img src="https://cdn.pixabay.com/photo/2017/08/20/14/37/eat-2661935_960_720.jpg" className="thumbnail-image p-image" alt="project-screenshot" />
                         </div>
+                        {links}
                     </div>
                 </div>
             </div>
@@ -99,9 +128,9 @@ export default class Projects extends Component {
     }
 }
 
-var linkStyle = {
-    margin: "0.5px solid #ED0982",
-    backgroundColor: "none",
-    color: "#ED0982",
-    textDecoration: "none"
-}
+// var linkStyle = {
+//     margin: "0.5px solid #ED0982",
+//     backgroundColor: "none",
+//     color: "#ED0982",
+//     textDecoration: "none"
+// }

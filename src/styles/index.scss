@@ -3,6 +3,8 @@
 $primary-color: #181818;
 $button-color: #f96816;
 $featured-color: yellow;
+$beautiful-pink: #ED0982;
+$refreshingly-blue: #5AA2FF;
 
 *{
     margin: 0;
@@ -120,8 +122,8 @@ header{
     }
 
     section.featured {
-        background-color: $featured-color;
-        
+        background-color: $refreshingly-blue;
+            
         .read-btn{
             margin-top: 2em;
             display: block;
@@ -159,7 +161,7 @@ header{
         font-size: 1.3em;
         height: calc(75% + 3rem);
         width: calc(100% - .05em);
-        border-bottom: 1px solid #ED0982;
+        border-bottom: 1px groove $beautiful-pink;
     }
     .Projects{
         width: 100vw;
@@ -170,59 +172,143 @@ header{
         .project-wrapper {
             color: white;
             display: flex;
-            justify-content: start;
+            text-align: left;
             width: 100%;
             background-color: #0C0D16;
             border: 0;
-            transition: .3sec;
             margin-top: 1rem;
             margin-bottom: 1rem;
+            
+        .thumbnail {
+            left: 0;
+            padding: 0;
+            margin-right: 0.5rem;
+            border-right: 1px groove $beautiful-pink;
+
+            .thumbnail-image{
+            left: 0;
+            height: 80px;
+            width: 80px;
+            }
+        }
+            .arrow-head{
+                // margin: 2.5% 5% 2.5% 40%; 
+                margin-top: 1.35rem;
+                -webkit-transition-duration: .3s;
+                -moz-transition-duration: .3s;
+                -o-transition-duration: .3s;
+                transition-duration: .3s;
+                -webkit-transition-property: -webkit-transform;
+                -moz-transition-property: -moz-transform;
+                -o-transition-property: -o-transform;
+                transition-property: transform;
+            }
+
+            arrow-head:hover{
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                color: $beautiful-pink;
+            }
 
             .tags{
                 font-size: 0.5rem;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 color: grey;
-            }
-            .thumbnail {
-                left: 0;
-                padding: 0;
-                margin-right: 0.5rem;
-                border-right: 1px solid #ED0982;
 
-                .thumbnail-image{
-                left: 0;
-                height: 80px;
-                width: 80px;
+                span{
+                    margin: 0 0.5rem;
                 }
-
+                span:nth-child(1){
+                    margin-left: 0;
+                }
             }
 
             .text-wrapper {
                 margin-top: 15px;
                 padding-top: 10px;
-
+                width: calc(92% - 89px);
             }
-            
         }
 
         .project-content{
             .link-projects{
-                display: inline-block;
-                justify-content: space-around;
+                display: flex;
+                justify-content: space-between;
                 .link{
-                    margin: 0.5px solid #ED0982;
+                    margin: 0.5px solid $beautiful-pink;
                     background-color: none;
-                    color: #ED0982;
+                    color: $beautiful-pink;
                     text-decoration: none;
                 }
             }
         }
     }
 
+    .link-buttons{
+        display: grid;
+        margin: 1rem 12.5% 0 12.5%;
+        padding: 1rem 0 1rem 0;
+        
+        div{
+            padding: 1rem;
+            border: 1px dotted;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+        
+        &:hover{
+                background-color: $refreshingly-blue;
+                transition: all 0.3s ease-in-out;
+                a  {
+                    color: white;
+                }
+            }
+        }
+
+
+    }
+
 }
 
+.project-content-wrapper{
+    display: grid;
+    align-content: left;
+    transition: "all 3s";
+    width: 75%;
 
+    .paragraph{
+    color: rgba(245, 245, 245, 0.637);
+    width: calc(100%);
+    }
+    .content-image{
+    display: block;
+    padding: .5rem;
+
+    .project-image{
+        height: 56.25%;
+        width: 100%;
+        }
+    }
+}
+
+.link-container{
+    display: flex;
+    justify-content: space-around; 
+    margin:1.5rem 0 0 -.5rem; 
+    padding:0.3rem;
+
+    .project-link{
+        color: rgba(245, 245, 245, 0.637); 
+        padding: 0.5rem; 
+        border-radius: .2rem;
+    }
+
+    .project-link a:hover{
+        color: $beautiful-pink
+    }
+}
 
 //ABOUT PAGE:
 .about {
@@ -232,14 +318,14 @@ header{
 }
 .about, .technical-skills, .personal-statement{
     margin-left: 3%;
-    color: whitesmoke;
+    color:rgba(245, 245, 245, 0.637);
     padding: 1rem 0 0 0;
     font-size: 0.8em;
     text-align: left;
 
     h2, h3, h4 {
         font-weight: lighter; 
-        color: #ED0982;
+        color: $beautiful-pink;
         font-size: 1.5rem;
         padding: 1rem 0;
         text-align: left;
@@ -268,14 +354,14 @@ header{
     ul li{
     display: inline-block;
     padding: 0.5em;
-    border: 1px solid #ED0982;
+    border: 1px hidden $beautiful-pink; //outset, groove, inset, ridge and dotted
     margin: 0.2em;
     border-radius: 2rem;
     }
 
     ul li:hover{
     background-color: yellow;
-    color: #ED0982;
+    color: $beautiful-pink;
     }
 }
 
@@ -291,7 +377,7 @@ header{
 .contact-div{
     display: inline-block;
     padding: .5rem;
-    color: ghostwhite;
+    color: rgba(245, 245, 245, 0.637);
     margin: 3em 0 0 .3rem;
     font-size: .8rem;
     a:hover{
@@ -307,9 +393,6 @@ header{
         }
     }
 }
-
-
-
 
 
 //RESPONSIVENESS
@@ -348,7 +431,7 @@ header{
         }
 
         nav ul li a{
-            color: ghostwhite;
+            color:ghostwhite;
         }
     }
     .fullscreen{
@@ -380,6 +463,34 @@ header{
         // width: 80%;
 
     }
+
+    .project-content-wrapper{
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "paragraph content-image"
+            "paragraph link-container";
+
+    }
+    .paragraph{
+        grid-area: paragraph;
+    }
+
+    .content-image{
+        grid-area: content-image;
+        // margin-left: 12.5rem;
+
+        .project-image{
+            height: 180px;
+            width: 320px;
+        }
+    }
+
+    .link-container{
+        grid-area: link-container;
+        display: block;
+        margin: 4rem 0 0 6rem;
+    }
+
     .about{
         grid-template-columns: 70% auto;
         grid-template-areas:
@@ -389,13 +500,12 @@ header{
         
         .experience{
             margin-right: 1rem;
-            border-right: 0.02px solid;
+            border-right: 0.02px dotted;
             padding: 1rem;
         }
     }
     aside.technical-skills{
         grid-area: technical-skills;
-        // width: 20rem;
     }
 
     .location-info{
@@ -413,3 +523,10 @@ header{
         font-size: 1.4rem;
     }
 }
+
+//TODO: ADD THE ARROW/LEARN HOW TO ANIMATE IT AND HOW TO EASE IN USING -webkit transition; this is !important;
+// -webkit-transition: height 0.3s ease-in;
+//             -moz-transition: height 0.3s ease-in;
+//             -o-transition: height 0.3s ease-in;
+//             -ms-transition: height 0.3s ease-in;
+//             transition: height 0.3s ease-in;
