@@ -12,7 +12,7 @@ let projects = [
     {
         id: 2,
         name: "Javascript Development Environment",
-        description: 'A boiler plate project tht helps yoou get you and running quickly on Javascript projects. It giudes decisions on bundling, transpiling, liniting, unit-testing and deployment and much much more. It\'s a frictionless boilerplate so you can easily change configurations, scripts and technologies'
+        description: 'A boiler plate project tht helps yoou get you and running quickly on Javascript projects. It giudes decisions on bundling, transpiling, liniting, unit-testing and deployment and much much more. It\'s a frictionless boilerplate so you can easily change configurations, scripts and technologies',
         thumbnail: './images/programming-3186084_960_720.jpg',
         github: 'https://github.com/emmanuelmacharia/JavaScript-Development-Environment',
         deployed: false,
