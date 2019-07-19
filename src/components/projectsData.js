@@ -12,7 +12,7 @@ let projects = [
     {
         id: 2,
         name: "Javascript Development Environment",
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione, nemo sunt doloribus possimus doloremque non ex, tempora saepe dolorem ipsa, ad quo atque beatae. Iure, ab! Obcaecati, dicta eum?',
+        description: 'A boiler plate project tht helps yoou get you and running quickly on Javascript projects. It giudes decisions on bundling, transpiling, liniting, unit-testing and deployment and much much more. It\'s a frictionless boilerplate so you can easily change configurations, scripts and technologies'
         thumbnail: './images/programming-3186084_960_720.jpg',
         github: 'https://github.com/emmanuelmacharia/JavaScript-Development-Environment',
         deployed: false,
@@ -62,7 +62,7 @@ let projects = [
         {
         id: 7,
         name: "Redox Music",
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione, nemo sunt doloribus possimus doloremque non ex, tempora saepe dolorem ipsa, ad quo atque beatae. Iure, ab! Obcaecati, dicta eum?',
+        description: 'A full stack music application that is built in Django and Jinja in the front-end. ',
         thumbnail: './images/programming-3186084_960_720.jpg',
         github: 'https://github.com/emmanuelmacharia',
         deployed: false,
