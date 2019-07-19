@@ -27,14 +27,14 @@ let projects = [
         github: 'https://github.com/emmanuelmacharia/pomodoro-clock',
         deployed: true,
         website: 'https://pomodori-clock.herokuapp.com/',
-        tags: ["reactjs", "react-router", "react-bootstrap","react-fontawesome"] 
+        tags: ["reactjs", "react-router", "react-bootstrap & fontawesome"] 
     },
         {
         id: 4,
         name: "Questioner-database-integration",
         description: 'Crowd-source questions for a meetup. Questioner helps the meetup organizer prioritize questions to be answered. Other users can vote on asked questions and they bubble to the top or bottom of the log. This has a postgres database set up.',
         thumbnail: './images/programming-3186084_960_720.jpg',
-        github: 'https://github.com/emmanuelmacharia/Questioner-Dtabase-Integration',
+        github: 'https://github.com/emmanuelmacharia/Questioner-Database-Integration',
         deployed: true,
         website: 'https://questionscheme.herokuapp.com/api/v1/v2/users',
         tags: ["python3", "postgresql", "flask", "psycopg2"] 
@@ -57,7 +57,7 @@ let projects = [
         github: 'https://github.com/emmanuelmacharia/js-calculator',
         deployed: true,
         website: 'https://reactcalculator.herokuapp.com',
-        tags: ["reactjs", "react-bootstrap", "react-fontawesome", "html-css-javascript"] 
+        tags: ["reactjs-bootstrap", "react-fontawesome", "html-css-javascript"] 
     },
         {
         id: 7,
@@ -65,7 +65,7 @@ let projects = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione, nemo sunt doloribus possimus doloremque non ex, tempora saepe dolorem ipsa, ad quo atque beatae. Iure, ab! Obcaecati, dicta eum?',
         thumbnail: './images/programming-3186084_960_720.jpg',
         github: 'https://github.com/emmanuelmacharia',
-        deployed: true,
+        deployed: false,
         website: 'https://github.com/emmanuelmacharia',
         tags: ["python", "sqlAlchemy", "Django", "Jinja"] 
         }
