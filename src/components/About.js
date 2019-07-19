@@ -43,6 +43,7 @@ export default function About() {
                         <li>Object Oriented Programming</li>
                         <li>Functional Programming</li>
                         <li>API (REST)</li>
+                        <li>Webpack</li>
                         <li>Search Engine Optimization</li>
                         <li>Data Structures</li>
                         <li>Algorithms</li>
@@ -153,6 +154,9 @@ export default function About() {
                     <p>Fundamentals of Digital Marketing</p>
                 </section>
             </article>
+            <section>
+                <a href = "/contact">Get in touch</a>
+            </section>
         </div>
     )
 }

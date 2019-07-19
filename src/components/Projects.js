@@ -9,7 +9,7 @@ export default class Projects extends Component {
             projects,
             trigger: true,
             contentStyle : {
-                display: "none"
+                display: "none",
             }
         }
     }
@@ -22,8 +22,14 @@ export default class Projects extends Component {
         })
         if (this.state.trigger === true) {
             this.setState( 
-                this.state.contentStyle = {display: "block"}
-            )
+                this.state.contentStyle = {
+                    display: "block", 
+                    color: "white", 
+                    fontSize: "inherit",
+                    marginTop: "-1rem"
+                }
+            );
+            // this.styleChildren();
         } else {
             this.setState(
                 this.state.contentStyle = {display: "none"}
@@ -31,21 +37,30 @@ export default class Projects extends Component {
         }
     }
 
+    // styleChildren = () => {
+    //     var description = document.getElementsByClassName("description")[0];
+    //     var linkdiv = document.getElementsByClassName("link-project")[0]
+    //     var links = document.getElementsByClassName("link")
+    //     description.body.style = {
+    //         padding: "1rem",
+    //         textAlign: 'justify',
+    //         margin: "0 0 0 0.5rem",
+    //         width: "80%",
+    //         lineHeight: 1.15
+    //     }
+    //     linkdiv.body.style = {
+    //         display: "flex",
+    //         justifyContent: "space-around"
+    //     }
+
+    //     links.body.style = {
+    //         border: "0.5px solid #ED0982",
+    //         borderRadius: "1rem",
+    //         margin: "0.3rem"
+    //     }
+    // }
 
     render() {
-        // const projects = this.state.projects
-        // const projectView = projects.map(
-        //     project => {
-        //         var key = project.id
-        //         var name = project.name
-        //         var description = project.description
-        //         var github = project.github
-        //         var website = project.website
-        //         var thumbnnail = project.thumbnail
-        //         var deployed = project.deployed
-        //         }
-        //     )
-        //     console.log(projectView.key, projectView.name, projectView.description, projectView.github, projectView.website, projectView.thumbnail, projectView.deployed)
         return (
             <div>
                 <button className = "project-wrapper" onClick = {this.handleClick}>
@@ -67,12 +82,14 @@ export default class Projects extends Component {
                 </button>
                 <div className="project-content" style = {this.state.contentStyle}>
                     {/* <p> { projectView.description } </p> */}
+                    <div className = "description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ratione, nemo sunt doloribus possimus doloremque non ex, tempora saepe dolorem ipsa, ad quo atque beatae. Iure, ab! Obcaecati, dicta eum?</p>
-                    <div className="link-project" style={linkProjectStyle}>
-                        <div className="link" style = {linkStyle}>
+                    </div>
+                    <div className="link-project">
+                        <div className="link">
                             <a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view source code</a>  
                         </div>
-                        <div className = "link" style = {linkStyle}>
+                        <div className = "link">
                             <a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer">view live website</a>
                         </div>
                     </div>
@@ -87,9 +104,4 @@ var linkStyle = {
     backgroundColor: "none",
     color: "#ED0982",
     textDecoration: "none"
-}
-
-var linkProjectStyle = {
-    display: "inline-block",
-    justifyContent: "space-around"
 }
