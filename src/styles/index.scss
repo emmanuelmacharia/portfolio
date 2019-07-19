@@ -139,11 +139,14 @@ header{
 
 @media only screen and (min-width: 768px){
     html {
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 }
 
 @media only screen and (min-width: 1020px){
+    html{
+        font-size: 1.3rem;
+    }
     header {
         background: none;
         width: calc(100vw - 1em);
@@ -179,17 +182,41 @@ header{
         grid-template-rows: auto;
         align-items: center;
     }
+
+    .personal-statement{
+        text-align: justify;
+        width: 80%;
+
+    }
+    .about{
+        grid-template-columns: 85% auto;
+        grid-template-areas:
+            "experience technical-skills"
+            "education technical-skills";
+            height:100%;
+        
+        .experience{
+            margin-right: 1rem;
+        }
+    }
+    aside.technical-skills{
+        grid-area: technical-skills;
+        width: 20rem;
+    }
+
+
 }
 
 @media only screen and (min-width: 1800px){
     html {
-        font-size: 21px;
+        font-size: 1.4rem;
     }
 }
 
 // HOME, ABOUT AND CONTACT STYLES
 
 .fullscreen{
+    width: calc(100vw);
     background-image: linear-gradient(-45deg, #0C0D16, #1A1C2B);
     height: 100%;
       
@@ -264,5 +291,61 @@ header{
 
 }
 
+
+
+//ABOUT PAGE:
+.about {
+    display: grid;
+    grid-template-columns: auto;
+
+}
+.about, .technical-skills, .personal-statement{
+    margin-left: 3%;
+    color: whitesmoke;
+    padding: 1rem 0 0 0;
+    font-size: 0.8em;
+    text-align: left;
+
+    h2, h3, h4 {
+        font-weight: lighter; 
+        color: #ED0982;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        text-align: left;
+    }
+
+    h2{
+        padding: 0.3rem 0 0;
+    }
+    h3{
+        font-size: 1.2rem;
+        padding-top: .3rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+.personal-statement{
+    padding-top: 5rem;
+}
+.technical-skills{
+    margin-top: -1rem;
+    padding-left: 0;
+    margin-left: 0;
+
+    ul li{
+    display: inline-block;
+    padding: 0.5em;
+    border: 1px solid #ED0982;
+    margin: 0.2em;
+    border-radius: 2rem;
+    }
+
+    ul li:hover{
+    background-color: yellow;
+    color: #ED0982;
+    }
+}
 
 
