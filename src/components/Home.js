@@ -30,7 +30,7 @@ export default function Home() {
                     <a href = "https://github.com/emmanuelmacharia" target = "_blank" rel = "noopener noreferrer">Click here, To see more projects</a>
                 </div>
                 <div>
-                    <a href= "/about">Get to know me a little better</a>
+                    <a href = "/contact">Get in touch</a>
                 </div>
             </section>
         </div>
