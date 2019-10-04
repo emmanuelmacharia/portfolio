@@ -17,7 +17,7 @@ export default function Home() {
         <div className="fullscreen">
             <section className = "featured-section">
                 <p>2 years of professional experience in software development | possesses excellent technical aptitude.</p>
-                <p> Proficient in developing Responsive and Interactive websites | Skilful in HTML5, CSS3, SCSS, Javascript, jQuery and React </p>
+                <p> Proficient in developing Responsive and Interactive websites | Skillful in HTML5, CSS3, SCSS, Javascript, jQuery, Angular and React </p>
                 <p>Hands on experience working with python; both django and flask | Sound understanding of databases, API, SQL queries, JSON</p>
                 <p>Capable of peformance and unit testing, optimiation, Documentation, Version Control and Deployment</p>
 
