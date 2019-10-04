@@ -11,8 +11,8 @@ let projects = [
     },
     {
         id: 2,
-        name: 'Angular fundamentals',
-        description:'An application that lets one view, manage and browse through events. It\'s a front end application built on angular 2. It\'s a project built through learning angular. A user can sign in and sign out, create search and filter events and vote for sessions in the applications',
+        name: 'Eventscrubber',
+        description:'An application that lets one view, manage and browse through events. It\'s a front end application built on angular 2. It\'s a project built through learning angular. A user can sign in and sign out, create, search and filter events and vote for sessions in the applications',
         thumbnail: './images/programming-3186084_960_720.jpg',
         github: 'https://github.com/emmanuelmacharia/EventsApplication',
         deployed: false,
@@ -23,7 +23,7 @@ let projects = [
     {
         id: 3,
         name: "Javascript Development Environment",
-        description: 'A boiler plate project tht helps yoou get you and running quickly on Javascript projects. It giudes decisions on bundling, transpiling, liniting, unit-testing and deployment and much much more. It\'s a frictionless boilerplate so you can easily change configurations, scripts and technologies',
+        description: 'A boiler plate project tht helps you get you up and running quickly on Javascript projects. It giudes decisions on bundling, transpiling, liniting, unit-testing and deployment and much much more. It\'s a frictionless boilerplate so you can easily change configurations, scripts and technologies',
         thumbnail: './images/programming-3186084_960_720.jpg',
         github: 'https://github.com/emmanuelmacharia/JavaScript-Development-Environment',
         deployed: false,
