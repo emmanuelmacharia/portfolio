@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/82d5c451-1317-4333-a00e-d8e777e758a6/deploy-status)](https://app.netlify.com/sites/emmanuelmacharia/deploys)
 
 #### This project was created using the `create-react-app` boilerplate
 
