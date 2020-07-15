@@ -17,9 +17,7 @@ export default class Projects extends Component {
     handleClick = event => {
         var arrow = document.getElementsByClassName("arrow-head");
         var arrowArray = Array.from(arrow)
-        this.setState(prevState => {
-            this.state.trigger = !this.state.trigger
-        })
+        this.setState(prevState => this.state.trigger = !this.state.trigger)
         if (this.state.trigger === true) {
             this.setState( 
                 this.state.contentStyle = {
@@ -36,9 +34,7 @@ export default class Projects extends Component {
                 arr.focus();
             })
         } else {
-            this.setState(
-                this.state.contentStyle = {display: "none"}
-            )
+            this.setState(this.state.contentStyle = {display: "none"})
             arrowArray.map(arr => {
                 arr.style.transform = "rotate(90deg)";
                 arr.style.color = "#white";
