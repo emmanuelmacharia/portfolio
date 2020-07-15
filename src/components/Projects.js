@@ -97,7 +97,7 @@ export default class Projects extends Component {
             <div>
                 <button className = "project-wrapper" onClick = {this.handleClick}>
                     <div className = "thumbnail">
-                        <img src= "https://cdn.pixabay.com/photo/2017/08/20/14/37/eat-2661935_960_720.jpg" className= "thumbnail-image" alt = "project-screenshot" />
+                        <img src={this.props.thumbnail} className= "thumbnail-image" alt = "project-screenshot" />
                     </div>
                     <div className="text-wrapper">
                         <div className = "project-title">
@@ -117,7 +117,9 @@ export default class Projects extends Component {
                             <p>{this.props.description}</p>
                         </div>
                         <div className = "img">
-                            <img src="https://cdn.pixabay.com/photo/2017/08/20/14/37/eat-2661935_960_720.jpg" className="thumbnail-image p-image" alt="project-screenshot" />
+                            < img src = {this.props.thumbnail}
+                            className = "thumbnail-image p-image"
+                            alt = "project-screenshot" / >
                         </div>
                         {links}
                     </div>

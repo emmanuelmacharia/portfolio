@@ -10,7 +10,7 @@ $grey-text: grey;
 $white-background: white;
 $amazing-grey-text: rgba(245, 245, 245, 0.637);
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -20,13 +20,13 @@ body {
     font-family: "Maiandra GD";
     font-size: 16px;
 
-    a:hover{
-    text-decoration: none;
+    a:hover {
+        text-decoration: none;
     }
 }
 
 
-header{
+header {
     position: absolute;
     padding: 1em;
     z-index: 20;
@@ -35,7 +35,7 @@ header{
     width: calc(100vw);
     background: $white-background;
 
-    a{
+    a {
         text-decoration: none;
         color: black;
     }
@@ -45,7 +45,7 @@ header{
         text-transform: uppercase;
     }
 
-    nav ul{
+    nav ul {
         list-style-type: none;
         display: flex;
         justify-content: space-around;
@@ -53,7 +53,7 @@ header{
         margin: 0;
         padding: 0;
 
-        li a{
+        li a {
             padding: 1em;
         }
     }
@@ -63,19 +63,21 @@ header{
     display: grid;
     grid-template-columns: auto;
 
-    section{
+    section {
         padding: 3em;
 
-        h1, h2, read-btn{
+        h1,
+        h2,
+        read-btn {
             text-transform: uppercase;
             margin: 0;
         }
 
-        h2{
+        h2 {
             font-size: 1.2em;
         }
 
-        .read-btn{
+        .read-btn {
             text-decoration: none;
             color: black;
             font-weight: bold;
@@ -85,7 +87,7 @@ header{
             padding-left: 1em;
         }
 
-        .primary{
+        .primary {
             padding: 1.5em 1.5em 1.5em calc(3em + 25px);
             background-position: 3em;
             border: 1px solid $grey-text;
@@ -95,7 +97,7 @@ header{
             color: $white-text;
         }
 
-        .clipper{
+        .clipper {
             overflow: hidden;
 
         }
@@ -107,7 +109,7 @@ header{
         background-size: cover;
         color: $white-text;
 
-        p{
+        p {
             width: 70%;
             font-size: 1.2em;
             margin-bottom: 0;
@@ -119,24 +121,25 @@ header{
     }
 
 
-    section.featured, section.explore {
+    section.featured,
+    section.explore {
         font-size: .9em;
         line-height: 1.6em;
     }
 
     section.featured {
         background-color: $refreshingly-blue;
-            
-        .read-btn{
+
+        .read-btn {
             margin-top: 2em;
             display: block;
             background-position: 0 .2em;
-        } 
+        }
     }
 
     section.explore {
 
-        button{
+        button {
             margin: 1em 0 1em 0;
             width: 100%;
             background: $button-color;
@@ -151,14 +154,14 @@ header{
 
 // HOME, ABOUT AND CONTACT STYLES
 
-.fullscreen{
+.fullscreen {
     width: calc(100vw);
     background-image: linear-gradient(-45deg, #0C0D16, #1A1C2B);
-    height: 100%;
-      
-    .featured-section{
+    overflow-x: hidden;
+
+    .featured-section {
         padding: 6em 0 2em 0;
-        background-color:black;
+        background-color: black;
         color: $white-background;
         text-align: center;
         font-size: 1.3em;
@@ -166,7 +169,8 @@ header{
         width: calc(100% - .05em);
         border-bottom: 1px groove $beautiful-pink;
     }
-    .Projects{
+
+    .Projects {
         width: 100vw;
         margin-top: 3em;
         width: 75%;
@@ -181,20 +185,21 @@ header{
             border: 0;
             margin-top: 1em;
             margin-bottom: 1em;
-            
-        .thumbnail {
-            left: 0;
-            padding: 0;
-            margin-right: 0.5em;
-            border-right: 1px groove $beautiful-pink;
 
-            .thumbnail-image{
-            left: 0;
-            height: 80px;
-            width: 80px;
+            .thumbnail {
+                left: 0;
+                padding: 0;
+                margin-right: 0.5em;
+
+                .thumbnail-image {
+                    left: 0;
+                    min-height: 60px;
+                    width: 80px;
+                    margin: 10% 7.5%;
+                }
             }
-        }
-            .arrow-head{
+
+            .arrow-head {
                 // margin: 2.5% 5% 2.5% 40%; 
                 margin-top: 1.35em;
                 -webkit-transition-duration: .3s;
@@ -207,38 +212,40 @@ header{
                 transition-property: transform;
             }
 
-            arrow-head:hover{
+            arrow-head:hover {
                 transform: rotate(90deg);
                 -webkit-transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 color: $beautiful-pink;
             }
 
-            .tags{
+            .tags {
                 font-size: 0.4em;
                 display: flex;
                 color: $grey-text;
 
-                span{
+                span {
                     margin: 0 0.5em;
                 }
-                span:nth-child(1){
+
+                span:nth-child(1) {
                     margin-left: 0;
                 }
             }
 
             .text-wrapper {
-                margin-top: 15px;
-                padding-top: 10px;
+                padding: 10px 0 0 10px;
                 width: calc(92% - 89px);
+                border-left: 1px groove $beautiful-pink;
             }
         }
 
-        .project-content{
-            .link-projects{
+        .project-content {
+            .link-projects {
                 display: flex;
                 justify-content: space-between;
-                .link{
+
+                .link {
                     margin: 0.5px solid $beautiful-pink;
                     background-color: none;
                     color: $beautiful-pink;
@@ -248,22 +255,23 @@ header{
         }
     }
 
-    .link-buttons{
+    .link-buttons {
         display: grid;
         margin: 1em 12.5% 0 12.5%;
         padding: 1em 0 1em 0;
-        
-        div{
+
+        div {
             padding: 1em;
             border: 1px dotted;
             align-content: center;
             justify-content: center;
             text-align: center;
-        
-        &:hover{
+
+            &:hover {
                 background-color: $refreshingly-blue;
                 transition: all 0.3s ease-in-out;
-                a  {
+
+                a {
                     color: $white-background;
                 }
             }
@@ -274,41 +282,42 @@ header{
 
 }
 
-.project-content-wrapper{
+.project-content-wrapper {
     display: grid;
     align-content: left;
     transition: "all 3s";
     width: 100%;
 
-    .paragraph{
-    color: rgba(245, 245, 245, 0.637);
-    width: calc(100%);
+    .paragraph {
+        color: rgba(245, 245, 245, 0.637);
+        width: calc(100%);
     }
-    .content-image{
-    display: block;
-    padding: .5em;
 
-    .project-image{
-        height: 56.25%;
-        width: 100%;
+    .content-image {
+        display: block;
+        padding: .5em;
+
+        .project-image {
+            height: 56.25%;
+            width: 100%;
         }
     }
 }
 
-.link-container{
+.link-container {
     display: flex;
-    justify-content: space-evenly; 
-    margin:1.5em 0 0 -.5em; 
-    padding:0.3em;
+    justify-content: space-evenly;
+    margin: 1.5em 0 0 -.5em;
+    padding: 0.3em;
 
-    .project-link{
-        color: rgba(245, 245, 245, 0.637); 
-        padding: 0.5em; 
+    .project-link {
+        color: rgba(245, 245, 245, 0.637);
+        padding: 0.5em;
         border-radius: .2em;
         text-align: center;
     }
 
-    .project-link a:hover{
+    .project-link a:hover {
         color: $beautiful-pink
     }
 }
@@ -321,64 +330,73 @@ header{
 
 }
 
-.about, .technical-skills, .personal-statement{
+.about,
+.technical-skills,
+.personal-statement {
 
     margin-left: 3%;
     margin-right: 2%;
-    color:$amazing-grey-text;
+    color: $amazing-grey-text;
     padding: 1em 0 0 0;
     font-size: 0.9em;
     text-align: left;
 
-    h2, h3, h4 {
-        font-weight: lighter; 
+    h2,
+    h3,
+    h4 {
+        font-weight: lighter;
         color: $beautiful-pink;
         font-size: 1.5em;
         padding: 1em 0;
         text-align: left;
     }
 
-    h2{
+    h2 {
         padding: 0.3em 0 0;
     }
-    h3{
+
+    h3 {
         font-size: 1.2em;
         padding-top: .3em;
     }
+
     h4 {
         font-size: 1em;
     }
 }
 
-.personal-statement{
+.personal-statement {
     padding-top: 6em;
 
 }
-.technical-skills{
+
+.technical-skills {
     margin-top: -1em;
     padding-left: 0;
     margin-left: 0;
 
-    ul li{
-    display: inline-block;
-    padding: 0.5em;
-    border: 1px hidden $beautiful-pink; //outset, groove, inset, ridge and dotted
-    margin: 0.2em;
-    border-radius: 2em;
+    ul li {
+        display: inline-block;
+        padding: 0.5em;
+        border: 1px hidden $beautiful-pink; //outset, groove, inset, ridge and dotted
+        margin: 0.2em;
+        border-radius: 2em;
     }
 
-    ul li:hover{
-    background-color: $featured-color;
-    color: $beautiful-pink;
+    ul li:hover {
+        background-color: $featured-color;
+        color: $beautiful-pink;
     }
 }
 
-.experience ul, .education ul{
+.experience ul,
+.education ul {
     list-style: square inside none;
-    li{
+
+    li {
         margin: 0.5em 0;
     }
-}  
+}
 
 
 
@@ -390,18 +408,22 @@ header{
     padding: 2em 0 1em 0;
 
 }
-.contact-div{
+
+.contact-div {
     display: inline-block;
     padding: .5em;
     color: $amazing-grey-text;
     margin: 3em 0 0 .3em;
     font-size: .8em;
-    a:hover{
+
+    a:hover {
         text-decoration: none;
     }
-    .myform{
+
+    .myform {
         margin: .5em 0;
-        div{
+
+        div {
             padding: 0.2em;
             margin: 1em 1em -0.5em .1em;
             border: none;
@@ -412,64 +434,68 @@ header{
 
 
 //RESPONSIVENESS
-@media only screen and (min-width: 480px){
-    .location-info{
+@media only screen and (min-width: 480px) {
+    .location-info {
         height: 100vh;
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     html {
         font-size: 1.2em;
     }
 
-    .location-info{
+    .location-info {
         grid-template-columns: 50% auto;
         grid-template-rows: auto;
         grid-template-areas:
             "personal-statement contact-div";
     }
+
     section.contact-div {
         grid-area: contact-div;
     }
 
-    .project-wrapper{
-        .tags span{
+    .project-wrapper {
+        .tags span {
             font-size: 12.8px;
         }
     }
 
-    .personal-statement{
+    .personal-statement {
         width: calc(85%);
     }
 }
 
-@media only screen and (min-width: 1020px){
-    html{
+@media only screen and (min-width: 1020px) {
+    html {
         font-size: 1.3em;
     }
+
     header {
         background: none;
         width: calc(100vw - 1em);
-        
+
         .logo {
             color: $white-background;
         }
 
-        nav ul li a{
-            color:ghostwhite;
+        nav ul li a {
+            color: ghostwhite;
         }
     }
-    .fullscreen{
-        .featured-section{
+
+    .fullscreen {
+        .featured-section {
             padding: 3em 0 5sem 0;
         }
     }
+
     .wrapper {
         grid-template-columns: 72.5% auto;
         grid-template-rows: 60% auto;
         grid-template-areas:
-            "hero featured" 
+            "hero featured"
             "hero explore";
         height: 100vh;
     }
@@ -478,73 +504,76 @@ header{
         grid-area: hero;
     }
 
-    section{ 
+    section {
         display: grid;
         grid-template-rows: auto;
         align-items: center;
     }
 
-    .personal-statement{
+    .personal-statement {
         text-align: justify;
         // width: 80%;
 
     }
 
-    .project-content-wrapper{
+    .project-content-wrapper {
         grid-template-columns: 50% 50%;
-        grid-template-areas: 
+        grid-template-areas:
             "paragraph content-image"
             "paragraph link-container";
 
     }
-    .paragraph{
+
+    .paragraph {
         grid-area: paragraph;
     }
 
-    .content-image{
+    .content-image {
         grid-area: content-image;
         // margin-left: 12.5em;
 
-        .project-image{
+        .project-image {
             height: 180px;
             width: 320px;
         }
     }
 
-    .link-container{
+    .link-container {
         grid-area: link-container;
         display: block;
         margin: 4em 0 0 6em;
     }
 
-    .about{
+    .about {
         grid-template-columns: 70% auto;
         grid-template-areas:
             "experience technical-skills"
             "education technical-skills";
-            height:100%;
-        
-        .experience{
+        height: 100%;
+
+        .experience {
             margin-right: 1em;
             border-right: 0.02px dotted;
             padding: 1em;
         }
     }
-    aside.technical-skills{
+
+    aside.technical-skills {
         grid-area: technical-skills;
     }
 
-    .location-info{
+    .location-info {
         height: 100vh;
     }
-    .contacts{
+
+    .contacts {
         width: 20%;
         height: 18em;
         margin: 2.5em;
     }
 }
 
-@media only screen and (min-width: 1800px){
+@media only screen and (min-width: 1800px) {
     html {
         font-size: 1.4em;
     }
