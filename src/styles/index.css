@@ -65,7 +65,9 @@ header nav ul li a {
   padding: 3em;
 }
 
-.wrapper section h1, .wrapper section h2, .wrapper section read-btn {
+.wrapper section h1,
+.wrapper section h2,
+.wrapper section read-btn {
   text-transform: uppercase;
   margin: 0;
 }
@@ -115,7 +117,8 @@ header nav ul li a {
   font-size: 2.2em;
 }
 
-.wrapper section.featured, .wrapper section.explore {
+.wrapper section.featured,
+.wrapper section.explore {
   font-size: .9em;
   line-height: 1.6em;
 }
@@ -143,7 +146,7 @@ header nav ul li a {
 .fullscreen {
   width: calc(100vw);
   background-image: linear-gradient(-45deg, #0C0D16, #1A1C2B);
-  height: 100%;
+  overflow-x: hidden;
 }
 
 .fullscreen .featured-section {
@@ -181,13 +184,13 @@ header nav ul li a {
   left: 0;
   padding: 0;
   margin-right: 0.5em;
-  border-right: 1px groove #ED0982;
 }
 
 .fullscreen .Projects .project-wrapper .thumbnail .thumbnail-image {
   left: 0;
-  height: 80px;
+  min-height: 60px;
   width: 80px;
+  margin: 10% 7.5%;
 }
 
 .fullscreen .Projects .project-wrapper .arrow-head {
@@ -224,9 +227,9 @@ header nav ul li a {
 }
 
 .fullscreen .Projects .project-wrapper .text-wrapper {
-  margin-top: 15px;
-  padding-top: 10px;
+  padding: 10px 0 0 10px;
   width: calc(92% - 89px);
+  border-left: 1px groove #ED0982;
 }
 
 .fullscreen .Projects .project-content .link-projects {
@@ -328,7 +331,9 @@ header nav ul li a {
   line-height: 1.6em;
 }
 
-.about, .technical-skills, .personal-statement {
+.about,
+.technical-skills,
+.personal-statement {
   margin-left: 3%;
   margin-right: 2%;
   color: rgba(245, 245, 245, 0.637);
@@ -337,7 +342,15 @@ header nav ul li a {
   text-align: left;
 }
 
-.about h2, .about h3, .about h4, .technical-skills h2, .technical-skills h3, .technical-skills h4, .personal-statement h2, .personal-statement h3, .personal-statement h4 {
+.about h2,
+.about h3,
+.about h4,
+.technical-skills h2,
+.technical-skills h3,
+.technical-skills h4,
+.personal-statement h2,
+.personal-statement h3,
+.personal-statement h4 {
   font-weight: lighter;
   color: #ED0982;
   font-size: 1.5em;
@@ -345,16 +358,22 @@ header nav ul li a {
   text-align: left;
 }
 
-.about h2, .technical-skills h2, .personal-statement h2 {
+.about h2,
+.technical-skills h2,
+.personal-statement h2 {
   padding: 0.3em 0 0;
 }
 
-.about h3, .technical-skills h3, .personal-statement h3 {
+.about h3,
+.technical-skills h3,
+.personal-statement h3 {
   font-size: 1.2em;
   padding-top: .3em;
 }
 
-.about h4, .technical-skills h4, .personal-statement h4 {
+.about h4,
+.technical-skills h4,
+.personal-statement h4 {
   font-size: 1em;
 }
 
@@ -381,11 +400,13 @@ header nav ul li a {
   color: #ED0982;
 }
 
-.experience ul, .education ul {
+.experience ul,
+.education ul {
   list-style: square inside none;
 }
 
-.experience ul li, .education ul li {
+.experience ul li,
+.education ul li {
   margin: 0.5em 0;
 }
 
@@ -470,7 +491,7 @@ header nav ul li a {
         grid-template-columns: 72.5% auto;
     -ms-grid-rows: 60% auto;
         grid-template-rows: 60% auto;
-        grid-template-areas: "hero featured"  "hero explore";
+        grid-template-areas: "hero featured" "hero explore";
     height: 100vh;
   }
   section.hero {

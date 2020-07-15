@@ -17,9 +17,7 @@ export default class Projects extends Component {
     handleClick = event => {
         var arrow = document.getElementsByClassName("arrow-head");
         var arrowArray = Array.from(arrow)
-        this.setState(prevState => {
-            this.state.trigger = !this.state.trigger
-        })
+        this.setState(prevState => this.state.trigger = !this.state.trigger)
         if (this.state.trigger === true) {
             this.setState( 
                 this.state.contentStyle = {
@@ -36,9 +34,7 @@ export default class Projects extends Component {
                 arr.focus();
             })
         } else {
-            this.setState(
-                this.state.contentStyle = {display: "none"}
-            )
+            this.setState(this.state.contentStyle = {display: "none"})
             arrowArray.map(arr => {
                 arr.style.transform = "rotate(90deg)";
                 arr.style.color = "#white";
@@ -97,7 +93,7 @@ export default class Projects extends Component {
             <div>
                 <button className = "project-wrapper" onClick = {this.handleClick}>
                     <div className = "thumbnail">
-                        <img src= "https://cdn.pixabay.com/photo/2017/08/20/14/37/eat-2661935_960_720.jpg" className= "thumbnail-image" alt = "project-screenshot" />
+                        <img src={this.props.thumbnail} className= "thumbnail-image" alt = "project-screenshot" />
                     </div>
                     <div className="text-wrapper">
                         <div className = "project-title">
@@ -117,7 +113,9 @@ export default class Projects extends Component {
                             <p>{this.props.description}</p>
                         </div>
                         <div className = "img">
-                            <img src="https://cdn.pixabay.com/photo/2017/08/20/14/37/eat-2661935_960_720.jpg" className="thumbnail-image p-image" alt="project-screenshot" />
+                            < img src = {this.props.thumbnail}
+                            className = "thumbnail-image p-image"
+                            alt = "project-screenshot" / >
                         </div>
                         {links}
                     </div>
