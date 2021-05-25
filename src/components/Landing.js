@@ -1,21 +1,21 @@
 import React, { Component } from 'react'
-import { TimelineMax, Power2 } from "gsap/TweenMax";
+import { gsap, Power2 } from "gsap";
 
 export default class Landing extends Component {
 
     componentDidMount(){
-        var timeline = new TimelineMax();
-        timeline.staggerFrom('section', 2, {
+        // var timeline = new TimelineMax();
+        gsap.from('section', 2, {
             opacity: 0,
             scale: .5,
             ease: Power2.easeOut
         }, 0.2)
-        timeline.staggerFrom('h1, h2',0.5, {
+        gsap.from('h1, h2',0.5, {
             opacity: 0,
             y: -40,
             ease: Power2.easeInOut
         }, 0.2, "-=2")
-        timeline.staggerFrom('.anim-panel', 1, {
+        gsap.from('.anim-panel', 1, {
             opacity: 0,
             y: -40,
             ease: Power2.easeInOut
