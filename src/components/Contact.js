@@ -41,12 +41,8 @@ export default class Contact extends React.Component {
                          <div className="myform">
                              <div className = "primary-email contact-details"><a href="mailto:samuelmarsha@outlook.com"><FontAwesomeIcon icon={faMicrosoft} />&nbsp;Outlook</a></div>
                              <div className = "secondary-email contact-details"><a href="mailto:samwelehrmarsha@gmail.com"><FontAwesomeIcon icon={faGoogle} />&nbsp;Gmail</a></div>
-                             <div className = "phone contact-details"><a href="tel:+254707143761"><FontAwesomeIcon icon={faPhone} />&nbsp;work</a></div>
-                             <div className = "phone contact-details"><a href="tel:+254786860761"><FontAwesomeIcon icon={faMobile} />&nbsp;cell</a></div>
                              <div className = "linkedin contact-details"><a href="https://linkedin.com/in/emmanuel-macharia" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} />&nbsp;linkedIn</a></div>
                              <div className = "github contact-details"><a href="https://github.com/emmanuelmacharia" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} />&nbsp;github</a></div>
-                             <div className = "skype contact-details"><a href="skype:live:samuelmarsha?call"><FontAwesomeIcon icon={faSkype} />&nbsp;skype</a></div>
-                             <div className = "slack contact-details"><a href = "https://slack.com"><FontAwesomeIcon icon ={faSlack} />&nbsp;slack</a></div>
                              <div className="medium contact-details"><a href="https://medium.com/@samwelehrmarsha" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faMediumM} />&nbsp;Medium</a></div>
                              <div className="quora contact-details"><a href="https://www.quora.com/profile/Emmanuel-Macharia-2" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faQuora} />&nbsp;Quora</a></div>
                              <div className = "twitter contact-details"><a href="https://twitter.com/Samwelehrmarsha" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} />&nbsp;twitter</a></div>
